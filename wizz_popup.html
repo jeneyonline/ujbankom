@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/boxer.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+	</head>
+	<body>
+	
+<div class="overlay" style="display:block"></div>
+
+<div class="layer_bg card_layer wizz_layer" style="display:block">
+	<i class="layer_close"></i>
+	<div class="erste_logo"></div>
+	<div class="cont">
+		<div class="head">
+			<img src="img/wizz_card.png" alt="">
+			<h3>Vásároljon kártyával, ahogy szokott és spóroljon <br>a Wizz Air szolgáltatásain!</h3>
+		</div>
+		<div class="text">
+			<h5>Minden vásárlásra költött 100 forint után 2 pontot írunk jóvá. Wizz Air repülőjegy vásárlása esetén 100 forintonként 4 pont jár. Számolja ki, mennyit spórolhat egy évben! Számolja ki, hogy havi vásárlásait Wizz Air Hitelkártyával fizetve, hány pontot gyűjthetne 1 év alatt?</h5>
+			<div class="left">
+				<div class="row clr">
+					<div class="col50">
+						<div class="input">
+							<div class="label">Élelmiszer: </div>
+							<input type="text" class="price" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Üzemanyag: </div>
+							<input type="text" class="price" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Wizz Air <br>repülőjegy: </div>
+							<input type="text" class="price" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Egyéb bankkártyásvásárlás:</div>
+							<input type="text" class="price" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+				</div>
+				<p class="font12">Az összegyűjtött pontokat Wizz Air repülőjegyekre és egyéb Wizz Air szolgáltatások igénybevételére (pl. poggyászköltség, extra lábhely) válthatja be. 1 pont=1 forint. Az összegyűjtött pontokból a foglalás egy része is kifizethető. Részletek: www.erstebank.hu</p>
+			</div>
+			<div class="right">
+				<div class="row clr">
+					<div class="col50">
+						Havi költés:
+						<div class="price">0 Ft</div>
+					</div>
+					<div class="col50">
+						Havi pontok összege:
+						<div class="price">0 db</div>
+					</div>
+				</div>
+				<span class="price-text"><span>Ajándék pontok összege:</span></span>
+				<div class="price big">10 000 db</div>
+				<div class="clear clear15"></div>
+				<span class="price-text"><span>Éves pontok összege:</span></span>
+				<div class="price big">0 db</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <div class="wrapper">
+      <div class="m_cont"> 
+        
+        <!-- header -->
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="index.html">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div>
+          <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu --> <nav class="top_nav"><ul>
+                  <li><a href="szegmens-offline.html" id="szegmens_termek_oldal">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <div class="bg_code clr" id="top_login">
+                <div class="txt">Egyéni kód megadása <br>
+                  a személyes tartalmakhoz:</div>
+                <div class="code_form">
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="">
+                  </form>
+                </div>
+              </div>
+              <div class="bg_code bg_logged clr" id="top_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+        
+        <!-- content -->
+        <section>
+          <div class="center clr"> 
+          <div class="cont_inner">
+            <!-- left col -->
+            <div class="col_left">
+              <nav class="left_nav">
+                <div class="title">Kisokos</div>
+                <ul>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="szotar.html" class="active">Kisokos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- left col --> 
+            <!-- center col -->
+            <div class="col_center">              <ul class="breadcrumb clr">
+                <li><a href="index.html">Főoldal</a></li>
+                <li>Kisokos</li>
+              </ul>
+              <h2>Citi-Erste banki fogalomtár</h2>
+              <div class="cont_szotar">
+              <div class="txt">
+              A Citi-Erste banki fogalomtár arra szolgál, hogy Ön tisztában legyen azzal, hogy a Citibanknál használt szakkifejezéseknek mi a megfelelője az Erste banknál.
+              <div class="clear20"></div>
+              <ul>
+              <li class="clr"><span class="cs_left">Citibank Online</span><span class="cs_right">Erste NetBank</span></li>
+              <li class="clr"><span class="cs_left">CitiPhone Banking</span><span class="cs_right">Erste TeleBank</span></li>
+              <li class="clr"><span class="cs_left">(Személyi) Bankár</span><span class="cs_right">(Fióki) Tanácsadó, Prémium bankár, <br>World bankár, privát bankár </span></li>
+              <li class="clr"><span class="cs_left">Prémium Megtakarítási Termék</span><span class="cs_right">Erste Strukturált Termék</span></li>
+              <li class="clr"><span class="cs_left">PIL PPI</span><span class="cs_right">Törlesztésvédelmi biztosítás</span></li>
+              <li class="clr"><span class="cs_left">Utazási csomag</span><span class="cs_right">Utasbiztosítás</span></li>
+              <li class="clr"><span class="cs_left">E-számlakivonat</span><span class="cs_right">Elektronikus számlakivonat</span></li>
+              <li class="clr"><span class="cs_left">CitiGold</span><span class="cs_right">Erste World</span></li>
+              <li class="clr"><span class="cs_left">Citi Select</span><span class="cs_right">Erste Private Banking</span></li>
+              <li class="clr"><span class="cs_left">Citi Priority</span><span class="cs_right">Erste Prémium</span></li>
+              <li class="clr"><span class="cs_left">Citibank SMS Hírnökszolgálat</span><span class="cs_right">Erste Hírnök</span></li>
+              <li class="clr"><span class="cs_left">Könnyített Törlesztés szolgáltatás</span><span class="cs_right">&nbsp;</span></li>
+              <li class="clr"><span class="cs_left">Citibank Hitelvonal</span><span class="cs_right">&nbsp;</span></li>
+              </ul>
+              </div>
+              </div>
+            </div>
+            <!-- center col --> 
+            <!-- right col -->
+            <div class="col_right">
+            <!-- box blue -->
+            <div class="right_box default_right_box clr">
+				<div class="txt">
+					<p>Az átállás folyamatáról és a tájékoztatás részletes menetrendjéről átlátható képet kaphat az Általános tudnivalók menüpontot megnyitva. Itt egy folyamatábra segítségével megnézheti, milyen lépések várnak Önre az elkövetkező hónapokban!</p>
+					<a href="" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box premium_box clr">
+				<div class="txt">
+					<p>Az Erste Prémium ügyfelei részére elsőbbségi kiszolgálást nyújt a bankfiókokban, valamint közvetlenül elérhető dedikált prémium bankárt biztosít. Ismerje meg az Erste Prémium szolgáltatást!</p>
+					<div align="center"><a href="" class="but_red">Megismerem!</a></div>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box world_box clr">
+				<div class="txt">
+					<p>Erste World szolgáltatásunkkal a valódi értékteremtés mellett elköteleződő, kiemelt ügyfeleinknek kínálunk széles körű pénzügyi megoldásokat. Ismerje meg az Erste World szolgáltatást!</p>
+					<div align="center"><a href="" class="but_lblue">Megismerem!</a></div>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box private_box clr">
+				<div class="txt">
+					<p>Az Erste Private Banking olyan emelt szintű, elsőbbségi kiszolgálást nyújt, melynek minőségét magasan képzett és nemzetközi tapasztalattal rendelkező Privát Banktára biztosítja.<br>
+					Ismerje meg az Erste Private Banking szolgáltatásait!</p>
+					<div align="center"><a href="" class="but_red">Megismerem!</a></div>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box max_box clr">
+				<div class="txt">
+					<p>Erste Max Hitelkártyájával bármire is költ, jól jár. Nyolc népszerű üzletkategóriából választhat hármat, amelyhez tartozó üzletekben Erste Max Hitelkártyás vásárlásai után visszatérítési bónuszt kap. <br>
+					Számolja ki, mennyi visszatérítést kaphat egy év alatt!</p>
+					<a href="" class="but_red">Érdekel!</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box wizz_box clr">
+				<div class="txt">
+					<p>Erste Wizz Air Hitelkártyájával közelebb kerülhet repülős utazásaihoz, mint eddig valaha. Hitelkártyás vásárlásaival pontokat gyűjthet, melyeket Wizz Air repülőjegyekre és egyéb utazási szolgáltatásokra válthat be.<br>
+					Számolja ki, hány pontot gyűjthet egy év alatt!</p>
+					<a href="#" class="but_red openLayer" data-layer="wizz_layer">Érdekel!</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box platinum_box clr">
+				<div class="txt">
+					<p>Az Önnek kijáró megkülönböztetett figyelem, nem csak a pénzügyekben. Platinum Hitelkártyájával világszerte több, mint 35 millió MasterCard logóval ellátott elfogadóhelyen fizethet kényelmesen, ráadásul vásárlásaiból akár 2 %-ot is visszakaphat Erste Forintok formájában.<br>
+					Számolja ki, mennyi visszatérítést kaphat egy év alatt!</p>
+					<a href="" class="but_red">Érdekel!</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box mass_box clr">
+				<div class="txt">
+					<p>Ismerje meg jobban az Erste világát, nézze meg a vezérigazgató Önnek szóló üzenetét.</p>
+					<a href="" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box kisokos_box2 clr">
+				<div class="txt">
+					<p>Nem találta meg a keresett információt? A Kérdések és válaszok menüpont bővebb tájékoztatást adhat Önnek. Mindent megtudhat, ami a zökkenőmentes átálláshoz kell.</p>
+					<a href="" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+			
+			<br>
+			
+			<!-- box blue -->
+            <div class="right_box kerdesekesvalaszok_box2 clr">
+				<div class="txt">
+					<p>Erste-Citi Kisokos, hogy minden egyértelmű legyen; eddigi szolgáltatásait és termékeit változatlan feltételek mellett megtalálja az Erste Banknál is. Itt megtudhatja miből mi lett, milyen néven találja kedvenc szolgáltatásait!</p>
+					<a href="" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+            
+                     
+             </div>
+            <!-- right col -->
+          </div>  
+            <div class="clear"></div>
+          </div>
+          
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        <!-- footer -->
+        <div class="clear"></div>
+        <footer>
+          <div class="center">
+            <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>
+              <nav>
+                <ul>
+                  <li><a href="szegmens-offline.html" id="szegmens_termek_oldal_footer">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>
+              </nav>
+            </section>
+            <article> <a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>
+              <p>Copyright © 2016 Citigroup Inc.</p>
+            </article>
+          </div>
+        </footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>
+</body>
+</html>

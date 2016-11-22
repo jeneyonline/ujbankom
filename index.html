@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+	</head>
+	<body>
+     <div class="layer" id="hibauzenet_layer">
+            <div class="overlay"></div>
+            <div class="layer_bg" id="hb">
+                <a onClick="closeErrorLayer()" class="layer_close">X</a>
+                <h3>Hibaüzenet</h3>
+                <div class="layer_txt" id="hibauzenet"></div>
+                <div class="layer_but_center">
+                    <div class="layer_but">
+                        <input type="hidden" id="elemFocus" value="">
+                        <a onClick="closeErrorLayer()"  class="but_blue">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="wrapper">
+      <div class="m_cont"> 
+        
+        <!-- header -->
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="index.html">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div> <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu -->
+              <nav class="top_nav"><ul><li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+        
+        <!-- content -->
+        <section>
+          <div class="center clr">
+            <div class="cont_index ind_bg clr">
+            <!-- index right -->
+              <div class="ind_right_box">
+                <div class="txt1">Az Erste Bank <br>
+                üdvözli Önt!</div>
+                <div class="txt2">
+                 Ismerje meg jobban az Erste világát, nézze meg a vezérigazgató Önnek szóló üzenetét.
+                   <div class="clear"></div>
+                <a href="javascript:;" class="but_red openLayer" data-layer="mass_layer">Megnézem</a>                    </div>         
+            </div>
+        <!-- index right -->
+                    <!-- index left -->
+              <div class="ind_left">
+                <div class="txt1">Tisztelt Ügyfelünk!<br>
+                  A lakossági ügyfélszámlák átadására a 2017. február 4. napjával kezdődő hétvégén kerül sor, azaz a Citibank lakossági ügyfelei ekkortól válnak az Erste Bank ügyfeleivé. <br>
+  Az átadással kapcsolatos információkat és tudnivalókat ezen a weboldalon olvashatja.</div>
+                <a href="altalanos_informacio.html" class="ind_box"> <span class="title">Általános információ</span></a> <a href="szegmens-offline.html"  class="ind_box"> <span class="title">Termékek és kiszolgálási csatornák</span></a> <a href="kerdesek_es_valaszok.html" class="ind_box"> <span class="title">Kérdések és válaszok</span></a> 
+                <div class="bg_code clr" id="content_login">
+                <div class="txt">Egyéni kód megadása:</div>
+                <div class="code_form">
+                <form>
+                  <input type="text" class="code_inp">
+                  <input type="submit" class="code_but" value="">
+                </form>
+                </div>
+                <div class="txt2">A kódot a Citibank által 2016 novemberében küldött tájékoztató levélben találja meg. 
+</div>
+              </div>
+                
+              <div class="bg_code bg_logged clr" id="content_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+               </div> 
+            <!-- index left -->
+            
+          </div>
+          <div class="clear"></div>
+          </div>
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        <!-- footer -->
+        <div class="clear"></div>
+        <footer><div class="center">    <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>          <nav> <ul>
+                  <li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>          </nav>    </section>    <article>     	<a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>      	<p>Copyright © 2016 Citigroup Inc.</p>    </article></div></footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>
+</body>
+</html>

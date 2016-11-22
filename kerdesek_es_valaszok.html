@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+	</head>
+	<body>
+     <div class="layer" id="hibauzenet_layer">
+            <div class="overlay"></div>
+            <div class="layer_bg" id="hb">
+                <a onClick="closeErrorLayer()" class="layer_close">X</a>
+                <h3>Hibaüzenet</h3>
+                <div class="layer_txt" id="hibauzenet"></div>
+                <div class="layer_but_center">
+                    <div class="layer_but">
+                        <input type="hidden" id="elemFocus" value="">
+                        <a onClick="closeErrorLayer()"  class="but_blue">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="wrapper">
+      <div class="m_cont"> 
+        
+        <!-- header -->
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="index.html">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div>
+          <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu --> <nav class="top_nav"><ul><li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li class="act"><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <div class="bg_code clr" id="top_login">
+                <div class="txt">Egyéni kód megadása </div>
+                <div class="code_form">
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="">
+                  </form>
+                </div>
+              </div>
+              <div class="bg_code bg_logged clr" id="top_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+        
+        <!-- content -->
+        <section>
+          <div class="center clr"> 
+          <div class="cont_inner">
+            <!-- left col -->
+            <div class="col_left">
+              <nav class="left_nav">
+                <div class="title">Kérdések és válaszok</div>
+                <ul>
+                  <li><a href="kerdesek_es_valaszok.html" class="active">Kérdések és válaszok</a></li>
+                  <li><a href="kisokos.html">Kisokos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- left col --> 
+            <!-- center col -->
+            <div class="col_center">              <ul class="breadcrumb clr">
+                <li><a href="index.html">Főoldal</a></li>
+                <li>Kérdések és válaszok</li>
+              </ul>
+              <h2>Minden kérdésére megtalálja a választ!</h2>
+                <script>
+  $( function() {
+    $( ".faq-cont" ).accordion({
+	header: "h5",
+	panel: ".gyik_item",
+	heightStyle: "content",
+	active: false,
+	collapsible: true
+	
+	});
+  } );
+  </script>
+              <div class="faq-cont">
+              <h4>ÁLTALÁNOS</h4>
+              <h5>1. Nekem mi a teendőm?</h5>
+              <div class="gik_item">
+                <p>Lakossági ügyfeleinket 2016 novemberében postai levélben értesítettük az ügyfélszámlák Erste Bank Hungary Zrt. (továbbiakban: Erste Bank) és Erste Befektetési Zrt. (továbbiakban együtt: Erste Bank) részére történő átadásáról és az ezzel kapcsolatos tudnivalókról.<br>
+				Az ügyfélszámlák átadása automatikus. Az Erste szerződéses feltételei az ügyfélszámlák átadásának napján lépnek életbe. Az Erste szolgáltatásait Ön az ügyfélszámlák átvételét követően, azaz 2017. február 4. napjától kezdődően veheti igénybe.<br>
+                  Az alábbiakban összegyűjtöttük Önnek a legfontosabb tudnivalókat az  ügyfélszámlák átadásával kapcsolatban.</p>
+                <ul>
+                  <li><u>Számlavezetés:</u> Az ügyfélszámlák átadásakor érvényes Citibank számlavezetési  díjcsomagjának kondíciói az átvételt követően változatlanok vagy kedvezőbbek  lesznek. Mivel az Ön számlájának számlaszáma az ügyfélszámlák átadását követően  megváltozik, kérjük, értesítse a megváltozott számlaszámról azokat, akiktől  utalást vár (pl. a munkáltatóját)! A családtámogatási ellátások (pl. családi  pótlék, gyes, gyet, anyasági támogatás és a nyugdíjak, illetve a nyugdíjszerű  ellátások) az ügyfélszámlák átadása után automatikusan az új számlaszámra  kerülnek átutalásra. </li>
+                  <li><u>Lekötött betét:</u> A Citibanknál  meglévő lekötött betét állományát az Erste Bank változatlan kondíciókkal veszi  át. Az automatikusan megújuló betétek az  ügyfélszámlák átadása után már az Erste Bank feltételei szerint újulnak meg.</li>
+                  <li><u>Betéti kártya:</u> Amennyiben Ön rendelkezik betéti kártyával, az  ügyfélszámlák átadását követően az Erste Bank által kibocsátott új betéti  kártyáját használhatja, amelyet az Erste Bank 2017. január folyamán külön  levélben küld meg Önnek. A betéti kártya aktiválásával kapcsolatos  információkat a kártya kísérő levélben találja.</li>
+                <li><u>Folyószámlahitel:</u> Az ügyfélszámlák átadása után változatlan marad a  jelenlegi folyószámlahitel-szerződése alapján rendelkezésre álló hitelkerete,  az éves kamat mértéke és az  esetleges díjak és költségek tekintetében is azonos vagy kedvezőbb feltételek  vonatkoznak Önre.<br>
+                  Folyószámla-hitelkerete folyamatos rendelkezésre bocsátásának  továbbra is feltétele, hogy a szükséges minimum jövedelem minden hónapban  rendszeresen a folyószámlájára kerüljön átutalásra. Kérjük, időben tájékoztassa  munkáltatóját, hogy jövedelmét 2017. február 4. napjától kezdődően a  megváltozott számlaszámra utalja. 
+                </li>
+                  <li><u>Befektetési  termékek:</u> Az ügyfélszámlák átadását  követően a Citibanknál vezetett értékpapírszámláin elhelyezett állományok az  Erste Befektetési Zrt-nél új értékpapírszámlákra kerülnek átvezetésre. Az  értékpapírszámlák számlaszáma megváltozik, az új számlaszámo(ka)t a Citibank  által 2016 novemberében és a 2017 januárjában kiküldésre kerülő levélben is  megtalálja.</li>
+                  <li><u>Hitelkártya:</u> Citibank hitelkártyáját új, az Erste által kibocsátott  hitelkártyára cseréljük, amelyet az Erste Bank 2017. január folyamán külön  levélben küld meg Önnek. Az új hitelkártyájához tartozó kamat-, költség- és  díjtételek változatlanok maradnak. Az új hitelkártya száma és számlaszáma a  jelenlegi Citibank által kibocsátott kártyához képest eltér, az ügyfélszámlák  átadását követően Önnek az új számlaszámra kell hitelkártya-tartozását (de  havonta legalább a minimum fizetendő összeget) visszafizetnie. </li>
+                <li>
+                <u>Személyi  Hitel / Személyi Kölcsön:</u> Az ügyfélszámlák  átadása után az Ön Személyi Hitelének / Személyi Kölcsönének éves kamata és a  törlesztőrészletek összege változatlan marad és az esetleges díjak és költségek  tekintetében is azonos vagy kedvezőbb feltételek vonatkoznak Önre.<br>
+                  Az ügyfélszámlák átadása után az Ön törlesztési számlaszáma  megváltozik, ezt követően Önnek az új számlán kell a Személyi Hitel / Személyi  Kölcsön havi törlesztőrészleteinek összegét biztosítania. Amennyiben az  ügyfélszámlák átadása után a havi törlesztőrészletének visszafizetési  esedékességi napja megváltozik, kérjük, ügyeljen a megváltozott fizetési  határidő betartására.  </li>
+  <li><u>Jelzálogkölcsön:</u> Az ügyfélszámlák átadása után az Ön Jelzálogkölcsönének  kamatszámítása és a törlesztőrészletek havi összege változatlan marad és az esetleges díjak  és költségek tekintetében is azonos vagy kedvezőbb feltételek vonatkoznak Önre.<br>
+                  Törlesztési számlaszáma megváltozik, ezt követően az új  számlán kell a Jelzálogkölcsön havi törlesztőrészleteinek összegét biztosítania.  Amennyiben az ügyfélszámlák átadása után a havi törlesztőrészletének  visszafizetési esedékességi napja megváltozik, kérjük, ügyeljen a megváltozott  fizetési határidőre.</li></ul>
+              </div>
+              
+              <h5>2.	Mikortól leszek Erste ügyfél?</h5>
+              <div class="gik_item">
+              
+              2017. február 4-től válnak ügyfeleink az Erste ügyfeleivé. Az üzleti folyamatokat és az ügyfélkiszolgálást is ezzel egy időben veszi át az Erste.
+              </div>
+              
+              <h5>3.	Milyen tájékoztatást fogok kapni?</h5>
+              <div class="gik_item">
+                <p>Minden ügyfelünket személyre szóló postai levélben értesítjük az ügyfélszámlák átadásáról és az ezzel kapcsolatos tudnivalókról 2016 novemberében. 2017 januárjában újabb levélben tájékoztatjuk Önt többek között az ügyfélszámlák átadásának hétvégéjére vonatkozó üzletmenetről.<br>
+				Az ügyfélszámlák átadásával és átvételével kapcsolatos legfontosabb tudnivalókról, a jogairól, valamint az esetleges teendőiről ezen a weboldalon is tájékozódhat. Az ügyfélszámlák átadásáig a CitiPhone Banking telefonos ügyfélszolgálat, a Citibank Online Internet Banking szolgáltatás, a Citibank Mobilbank és a Citibank bankfiókjai változatlanul az Ön rendelkezésére állnak.</p>
+              </div>
+              
+              <h5>4.	Hol tudom intézni a jövőben a pénzügyeimet?</h5>
+              <div class="gik_item">
+                <p><u>Az ügyfélszámlák átadásáig</u> minden  Citibank ügyfélkapcsolati csatornánk továbbra is változatlan módon és  feltételekkel érhető el. <br>
+                  Fiókhálózatunk,  CitiPhone Banking telefonos ügyfélszolgálatunk, Citibank Online és Citibank  Mobilbank internet banki felületünk zavartalanul működik a szokásos ügymenet  szerint.<br>
+  <u>Az ügyfélszámlák átvétele után</u> az  Erste Bank több mint 120 bankfiókból álló országos hálózata, több mint 400 ATM-je,  0-24 órás NetBankja és TeleBankja az Ön rendelkezésére áll. <br>
+                  Felhívjuk  szíves figyelmét, hogy az ügyfélszámlák átvétele előtt az Erste munkatársai az  Ön Citibanknál meglévő termékeivel kapcsolatban nem tudnak tájékoztatást adni.</p>
+              </div>
+              
+              <h5>5.	Milyen banki szolgáltatás lesz elérhető lesz az ügyfélszámlák átadásának hétvégéjén?</h5>
+              <div class="gik_item">
+                <p>2017 januárjában külön levélben  részletes információt küldünk az ügyfélszámlák átadásának hétvégéjére vonatkozó  üzletmenetről.</p>
+              </div>
+              
+              <h5>6.	Mit tehetek, ha nem szeretném, hogy Citibankos termékeim és szolgáltatásaim átkerüljenek az Erstéhez?</h5>
+              <div class="gik_item">
+				<ul>
+					<li>Amennyiben nem kívánja igénybe venni <u>az Erste Bank számlavezetési szolgáltatását</u>, Ön a Citibank és az Erste Bank közötti átadás-átvételi eljárás kezdetéig, azaz legkésőbb 2017. február 3. 23:59-ig 30 napos felmondási idővel rendes felmondással, díjmentesen felmondhatja a Citibankkal jelenleg fennálló számlavezetési szerződését írásban a Citibank fiókokban vagy az alábbi levelezési címen: Citibank Europe plc Magyarországi Fióktelepe 1367 Budapest, Pf. 123. Felhívjuk figyelmét, hogy írásbeli felmondásának legkésőbb a fenti határidőig be kell érkeznie a Citibankhoz, ehhez, kérjük, vegye figyelembe a postai átfutás idejét, valamint a bankfiókok nyitva tartását. Ez esetben kérjük, hogy a formanyomtatványért hívja a CitiPhone Bankinget a +36 1 288 8888-as telefonszámon, munkanapokon 8:00 és 20:00 óra között. Felhívjuk figyelmét, hogy a szerződés felmondása esetén a Citibank a folyószámla szerződéshez kapcsolódó szolgáltatásokat a 30 napos felmondási időn belül, de legkésőbb 2017. február 3.23:59-ig nyújtja. Amennyiben a felmondási időből kevesebb mint 30 nap marad hátra 2017. február 3. 23:59-ig, abban az esetben  2017. február 3. 23:59-ig zárolja a bankszámlát és az ahhoz kapcsolódó betéti kártyát. Fennálló esetleges tartozása 2017. február 3. napján egy összegben esedékessé válik, amelyet a bankkártya használat következtében foglalásban álló, a felmondást követően terhelt tételekkel együtt 2017. február 4. napját megelőző napig a Citibanknak, 2017. február 4. napjától kezdődően az Erstének köteles  teljesíteni.</li>
+					<li>Amennyiben Ön  a fenti időpontig a Citibankkal fennálló, számlavezetési szolgáltatások  igénybevételére vonatkozó szerződését a fentiek szerint nem szünteti meg, az  úgy tekintendő, hogy Ön a szerződésének Erste Bank által történő átvételét és  az ezzel összefüggésben módosuló szerződési feltételeket tudomásul vette és  elfogadja.</li>
+					<li>Amennyiben nem kívánja igénybe venni az <u>Erste Bank által nyújtott folyószámlahitel / hitelkártya / személyi kölcsön / jelzáloghitel</u> termékeket, Ön a Citibank és az Erste Bank közötti átadás-átvételi eljárás kezdetéig, azaz legkésőbb 2017. február 3. 23:59-ig 30 napos felmondási idővel díjmentesen felmondhatja azokat írásban, a Citibank fiókokban vagy az alábbi levelezési címen: Citibank Europe plc Magyarországi Fióktelepe 1367 Budapest, Pf. 123. Felhívjuk figyelmét, hogy írásbeli felmondásának legkésőbb a fenti határidőig be kell érkeznie a Citibankhoz, ehhez, kérjük, vegye figyelembe a postai átfutás idejét, valamint a bankfiókok nyitva tartását. Ez esetben kérjük, hogy a formanyomtatványért hívja a CitiPhone Bankinget a +36 1 288 8888-as telefonszámon munkanapokon 8:00 és 20:00 óra között.</li>
+					<li>Felhívjuk figyelmét, hogy a  szerződés felmondása esetén a Citibankkal szemben a felmondási idő lejártának  időpontjában fennálló tartozása egy összegben esedékessé válik, melyet a  Citibank lakossági banki szolgáltatásainak Általános Üzleti Feltételeiben  meghatározott 30 napos felmondási idő utolsó napjáig köteles teljesíteni. <br>
+					Amennyiben Ön a fenti időpontig  a Citibankkal fennálló folyószámlahitel / hitelkártya / személyi kölcsön /  jelzáloghitel szerződését a fentiek szerint nem szünteti meg, az úgy  tekintendő, hogy Ön a szerződésének Erste Bank által történő átvételét és az  ezzel összefüggésben módosuló szerződési feltételeket tudomásul vette és  elfogadja.</li>
+					<li>Amennyiben nem kívánja igénybe venni az <u>Erste befektetési szolgáltatásait</u> vagy elutasítja az Erste üzletszabályzatát, Ön a Citibank és az Erste közötti átadás-átvételi eljárás kezdetéig, azaz legkésőbb 2017. február 3. 23:59-ig a Citibanknak megküldött írásbeli nyilatkozatában megjelölhet egy másik befektetési vállalkozást vagy árutőzsdei szolgáltatót, valamint annak az értékpapírszámlának, értékpapír-letéti számlának és a befektetéshez kapcsolódó pénzmozgások lebonyolítására szolgáló számlának a számát, ahová a Citibanknál lévő befektetéseit transzferálni kívánja. Nyilatkozatát megteheti a Citibank fiókokban vagy eljuttathatja levélben az alábbi levelezési címre: Citibank Europe plc Magyarországi Fióktelepe 1367 Budapest, Pf. 123. Ez esetben kérjük, hogy a formanyomtatványért hívja a CitiPhone Bankinget a +36 1 288 8888-as telefonszámon munkanapokon 8:00 és 20:00 óra között. Felhívjuk figyelmét, hogy írásbeli felmondásának legkésőbb a fenti határidőig be kell érkeznie a Citibankhoz, ehhez, kérjük, vegye figyelembe a postai átfutás idejét, valamint a bankfiókok nyitva tartását.<br>
+					Amennyiben 2017. február 3. 23:59-ig napjáig nem nyilatkozik a fentiek szerint, vagy a befektetéseinek transzferálására vonatkozó nyilatkozatát hiányosan tölti ki, vagy nem megfelelő helyre küldi, akkor ezt úgy tekintjük, hogy az Erste Befektetési Zrt. mint átvevő befektetési szolgáltatót és üzletszabályzatát elfogadta. Ez esetben az Ön tulajdonában lévő, a Citibank által kezelt befektetett pénzügyi eszközei 2017. február 4. napjával az Erste Befektetési Zrt. kezelésébe kerülnek, és azokra az Erste Befektetési Zrt. üzletszabályzatának előírásai vonatkoznak.
+</li>
+				</ul>
+              </div>
+              
+              <h5>7.	Egyéb kérdésem van, hol tudok tájékozódni? </h5>
+              <div class="gik_item">
+              <p>Az ügyfélszámlák átadásával és átvételével kapcsolatos legfontosabb tudnivalókról, a jogairól, valamint az esetleges teendőiről a 2016 novemberében postai levélben kiküldött, ügyfél-tájékoztató levélből, valamint ezen a weboldalon tájékozódhat. CitiPhone Banking telefonos ügyfélszolgálatunk munkanapokon 8:00-20:00 óra között áll ügyfeleink rendelkezésére a +36 1 288 8888-as telefonszámon.</p>
+              </div>
+              <h4>SZÁMLAVEZETÉS ÉS KAPCSOLÓDÓ SZOLGÁLTATÁSOK</h4>
+              <h5>8.	Megváltozik a számlaszámom, a számlához kapcsolódó díjak, költségek és jutalékok?</h5>
+              <div class="gik_item">
+				  <p>Az ügyfélszámlák átadását követően az Ön számlaszáma megváltozik. Az új számlaszámo(ka)t a 2016 novemberében kiküldött postai ügyfél-tájékoztató levelünkben és/vagy a 2017. január folyamán kiküldésre kerülő levélben is megtalálja.<br>
+				  Az ügyfélszámlák átadását követően a Citibanknál megszokott vagy annál kedvezőbb kondíciókkal végezhet tranzakciókat Erste számláján. A számlavezetési kondíciókat megtekintheti a <a href="pdf/a_citibank_lakossagi_allomany_atruhazasa_soran_atvett_tovabbiakban_nem_ertekesitett_lakossagi_bankszamlak.pdf" target="_blank">Hirdetményben.</a> </p>
+              </div>
+              
+              <h5>9.	Meg fog érkezni a fizetésem, nyugdíjam, családi pótlékom stb. az új Erste Bank által vezetett folyószámlámra?</h5>
+              <div class="gik_item">
+                <p>Az ügyfélszámlák átadását követően az Ön számlaszáma megváltozik. <br>
+                  Pénzügyeinek további zökkenőmentes intézése érdekében, kérjük, hogy  számlaszámának 2017. február 4. napjától kezdődő módosulásáról tájékoztassa  mindazokat, akiknek Ön utal és akiktől utalást vár, valamint az Ön által  fontosnak vélt intézményeket. Időben tájékoztassa munkáltatóját, hogy  jövedelmét 2017. február 4. napjától kezdődően a megváltozott számlaszámra  utalja! A Magyar Államkincstár és a Nyugdíjfolyósító Igazgatóság részére ezt a  számlaszám-változást Önnek nem kell bejelentenie, az általuk folyósított  ellátások (pl. családi pótlék, gyes, gyet, anyasági támogatás, nyugdíj,  nyugdíjszerű ellátások) az ügyfélszámlák átadása után automatikusan az új  számlaszámra kerülnek átutalásra.<br>
+  <strong>Az új számlaszám kizárólag az  ügyfélszámlák átvételét követően kerül aktiválásra.</strong> Ezen időpont előtt az új számlaszámon  forgalom (befizetés, kifizetés, bejövő vagy kimenő utalás) nem lehetséges.   </p>
+              </div>
+              
+              <h5>10.	Használhatom továbbra is a Citibank betéti kártyámat?</h5>
+              <div class="gik_item">
+                <p>Jelenlegi Citibank betéti kártyáját új, az Erste Bank által  kibocsátott betéti kártyára cseréljük, amelyet az aktiválásáról szóló  tájékoztatóval együtt az Erste Bank 2017. január folyamán külön levélben,  inaktív állapotban küld el Önnek. </p>
+                <p>A  jelenlegi Citibank betéti kártyája a 2017. február 4. napjával kezdődő hétvégén  – előzetes SMS-értesítést követően – blokkolásra kerül. Újabb SMS értesítést  kap majd, ha elkezdheti használni új, Erste betéti kártyáját és a kapcsolódó  szolgáltatásokat. Új, Erste betéti kártyája az első vásárlással vagy Erste Bank  ATM-nél történő egyenleg-lekérdezéssel (chip leolvasásával és PIN-kód  megadásával) automatikusan aktiválódik. </p>
+              </div>
+              
+              <h5>11.	Megváltozik a bankkártyámhoz tartozó PIN-kód?</h5>
+              <div class="gik_item">
+                <p>Az  új, Erste betéti kártyájához tartozó PIN-kód megegyezik a jelenlegi Citibank  betéti kártyája PIN-kódjával.</p>
+              </div>
+              
+              <h5>12.	Mi történik a csoportos beszedéseimmel és állandó átutalási megbízásaimmal?</h5>
+              <div class="gik_item">
+                <p>Az  Ön Citibanknál beállított csoportos beszedési megbízásai és állandó átutalási  megbízásai a megnyitásra kerülő Erste Bank számlá(ko)n változatlan feltételekkel  beállításra kerülnek az ügyfélszámlák átadásakor. A csoportos beszedések  módosítása szolgáltatónként eltérő időt vesz igénybe, ezért kérjük, fokozottan  ellenőrizze, hogy a bankszámlájára beállított csoportos beszedési megbízása(i)  teljesült(ek)-e! </p>
+              </div>
+              
+              <h5>13.	Folyószámlámhoz kapcsolódóan milyen szolgáltatásokat vehetek igénybe az ügyfélszámlák átadásáig?</h5>
+              <div class="gik_item">
+                <p>Új Citibank folyószámla nyitására, valamint betéti kártya igénylésére 2016. december 1-el bezárólag van lehetőség. December 2-től kezdődően a Citibank új csoportos beszedési megbízásra szóló felhatalmazást tartós átutalási és átvezetési megbízást nem fogad be, valamint díjcsomag módosítás nem kezdeményezhető.</p>
+              </div>
+              <h4>HITELEK ÉS KÖLCSÖNÖK</h4>
+              <h5>14.	Változik a személyi kölcsönöm kamata, törlesztőrészlete, esetleges díja és költsége?</h5>
+              <div class="gik_item">
+                <p>Az  ügyfélszámlák átadása után az Ön Személyi Hitelének / Személyi Kölcsönének éves  kamata, a törlesztőrészletek száma és havi összege változatlan marad és az esetleges díjak  és költségek tekintetében is azonos vagy kedvezőbb feltételek vonatkoznak Önre.</p>
+              </div>
+              
+              <h5>15.	Változik-e a törlesztés módja, esedékessége?</h5>
+              <div class="gik_item">
+                <p>Az ügyfélszámlák átadása után az Ön törlesztési számlája megváltozik, a törlesztőrészletek esedékessége pedig megváltozhat, erről  illetve a törlesztési módokról a 2016 novemberében postai úton küldött tájékoztató levélben talál pontos tájékoztatást.<br>
+				Jelzálogkölcsön esetén a törlesztőrészlet minden hónap 15. napján lesz esedékes (amennyiben ez nem banki munkanapra esik, úgy a következő banki munkanapon).</p>
+</div>
+              
+              <h5>16.	Meddig van lehetőségem Citibank Személyi Hitelt igényelni?</h5>
+              <div class="gik_item">
+                <p>A Citibank új Személyi Hitel igénylést 2017.  január 3-ig fogad be.</p>
+              </div>
+              <h4>HITELKÁRTYA</h4>
+              <h5>17.	Használhatom továbbra is a Citibank hitelkártyámat?</h5>
+              <div class="gik_item">
+              Jelenlegi Citibank hitelkártyáját új, az Erste Bank által kibocsátott hitelkártyára cseréljük, amelyet az aktiválásáról szóló tájékoztatóval együtt az Erste Bank 2017. január folyamán külön levélben küld el Önnek. 
+A jelenlegi Citibank hitelkártyája a 2017. február 4. napjával kezdődő hétvégén – előzetes SMS-értesítést követően – blokkolásra kerül. Új, Erste Bank hitelkártyáját az ügyfélszámlák átvételét követően használhatja. A 2017. február 4. napjával kezdődő hétvégére vonatkozó tudnivalókról 2017. január folyamán külön levélben tájékoztatjuk.
+              </div>
+              
+              <h5>18.	Megváltozik a hitelkártyámhoz tartozó PIN-kód?</h5>
+              <div class="gik_item">
+              Az új Erste hitelkártyájához tartozó PIN-kód megegyezik a Citibank hitelkártyája PIN-kódjával (több kártya esetén hitelkártyánként). PIN-kódját az ügyfélszámlák átadását és a hitelkártya aktiválását követően bármikor díjmentesen megváltoztathatja az Erste Bank bármelyik magyarországi ATM-jén.
+              </div>
+              
+              <h5>19.	Változik a hitelkártyám kamata, költségei és díjai?</h5>
+              <div class="gik_item">
+              Az újonnan kibocsátásra kerülő Erste hitelkártyák kamat-, költség- és díjtételei megegyeznek a jelenlegi Citibank hitelkártyákhoz tartozó kamat-, költség- és díjtételekkel.  
+              </div>
+              <h5>20.	Mi történik a Citibank hitelkártyával gyűjtött Citi Forintjaimmal?</h5>
+              <div class="gik_item">
+                <p>A  Citibank hitelkártyájával gyűjtött, fel nem használt Citi Forintjai 1:1  értékben átkerülnek az Erste Bankos hitelkártya egyenlegére, és az Erste  NetBankban lesznek beválthatók az új hitelkártyára vonatkozó feltételek szerint. <br>
+                </p>
+              </div>
+              <h5>21.	Ha több hitelkártyám van, azok összevonásra kerülnek?</h5>
+              <div class="gik_item">
+                <ul>
+                  <li>Ha Önnek jelenleg több  Citibank hitelkártyája van, azok nem kerülnek összevonásra.</li>
+                  <li>Az ügyfélszámlák  átadása és a folyamatos kártyahasználat érdekében jelenlegi Citibank  hitelkártyáit új, az Erste Bank által kibocsátott hitelkártyákra cseréljük,  amelyeket az Erste Bank 2017. január folyamán külön levélben küld meg Önnek.</li>
+                  <li>Az új Erste Bank  hitelkártyákhoz tartozó PIN-kódok megegyeznek a Citibank hitelkártyák  PIN-kódjával (a korábban említett kártyacserének megfelelően, több kártya  esetén hitelkártyánként). PIN-kódját az ügyféladatok átadását és a kártya  aktiválását követően bármikor díjmentesen megváltoztathatja az Erste Bank  bármelyik magyarországi ATM-jén.</li>
+                </ul>
+              </div>
+              <h5>22.	Citibank hitelkártyámhoz kapcsolódóan milyen szolgáltatásokat vehetek igénybe mielőtt az Erste Bank ügyfele leszek?</h5>
+              <div class="gik_item">
+                <p>Kártyaszámla  terhére végzett Csoportos Beszedési Megbízás Citibank Online-on keresztül 2016.  december 1-ig, CitiPhone Banking-en vagy bankfiókban 2017. január 15-ig  kezdeményezhető. Tartós átvezetési megbízás megadására és módosítására Citibank  Online-on keresztül 2016. december 1-ig van lehetőség. Utazási Csomag 2016.  december 31-ig köthető a Citibanknál. Tele-Kölcsön Plusz szolgáltatás 2016.  december 16-ig, Könnyített Törlesztés (Automatikus Könnyített Törlesztés) és  Tele-Kölcsön 2017. január 27-ig igényelhető a Citibanknál.</p>
+</div>
+              <h4>MEGTAKARÍTÁSOK ÉS BEFEKTETÉSEK</h4>
+              <h5>23.	Mi fog történni a Citibank által kezelt megtakarításaimmal?</h5>
+              <div class="gik_item">
+                <ul>
+                  <li>Az ügyfélszámlák  átadásakor, a Citibanknál vezetett megtakarítási számláját és meglévő lekötött  betét állományát az Erste Bank változatlan kondíciókkal veszi át. Az  automatikusan megújuló betétek az ügyfélszámlák átadása után már az Erste Bank  feltételei szerint újulnak meg.</li>
+                  <li>Az ügyfélszámlák  átadása után a megtakarítási számlák számlaszáma megváltozik, erről további  részleteket a Citibank által 2016 novemberében küldött tájékoztató levélben  talál.</li>
+                  <li>Az ügyfélszámlák  átadásakor a Citibanknál vezetett valamennyi betéti típusú Tartós Befektetési  Számláját változatlan kondíciókkal veszi át az Erste Bank. Ha Ön már  rendelkezik az Erste Banknál vezetett azonos évi betéti típusú Tartós  Befektetési Számlával, a Citibanknál vezetett állománya átvezetésre kerül és a  törvényi előírásokra tekintettel jogi és adózási szempontból összevontan,  egyként kezelendő. Ebből következően a betéti Tartós Befektetési Számlák  kamatozása a jelenleginél magasabb kamatbeállítással igazodni fog az Erste Bank  gyakorlatához, a kamat mértékét és elszámolási gyakoriságát az Erste Bank  mindenkori Lakossági Bankszámla és Betéti Hirdetménye tartalmazza.</li>
+                </ul>
+              </div>
+              <h5>24.	Mi fog történni a Citibank által kezelt befektetéseimmel?</h5>
+              <div class="gik_item">
+                <ul>
+                  <li>A Citibank által  kezelt befektetéseit az ügyfélszámlák átadását követően az Erste Bank  leányvállalata, az Erste Befektetési Zrt. kezeli. Értékpapírszámláján kezelt  befektetései, azok feltételei és díjai nem változnak.</li>
+                  <li>Az  ügyfélszámlák átadását követően a Citibanknál vezetett értékpapírszámláin  elhelyezett állományok az Erste Befektetési Zrt-nél új értékpapírszámlákra  kerülnek átvezetésre. Az új értékpapírszámlák száma a jelenlegi Citibanknál  vezetett értékpapírszámlák számától eltérő lesz. Az ügyfélszámlák átadását  követően használatos új számlaszámot a Citibank által 2016 novemberében küldött  tájékoztató levélben találja. </li>
+                  <li>Az ügyfélszámlák  átadásakor a Citibanknál vezetett valamennyi befektetési típusú Tartós  Befektetési Számláját változatlan kondíciókkal veszi át az Erste Befektetési  Zrt. Ha Ön már rendelkezik az Erste Befektetési Zrt-nél vezetett azonos évi  befektetési típusú Tartós Befektetési Számlával, a Citibanknál vezetett  állománya átvezetésre kerül és a törvényi előírásokra tekintettel jogi és  adózási szempontból összevontan, egyként kezelendő. </li>
+                </ul>
+              </div>
+              <h5>25.	Mi jelent a gyakorlatban az, hogy az Erste Bank és az Erste Befektetési Zrt. két külön jogi személy?</h5>
+              <div class="gik_item">
+                <ul>
+                  <li>Az Erste Bank és az Erste Befektetési Zrt. két  külön jogi személy. A Citi portfoliót így két jogi személy veszi át: az üzletág  átruházását követően az Erste Bank nyújtja a pénzügyi szolgáltatásokat külön  banki folyószámlán, míg a 100%-os tulajdonában lévő befektetési leányvállalata,  az Erste Befektetési Zrt. nyújtja a befektetési szolgáltatásokat a  befektetésekhez kötött pénzszámlán (mindkettő esetében különböző  devizanemekben). Természetesen pénzügyeit egyetlen bankáron keresztül  intézheti.</li>
+                  <li>A jogi különállás miatt az Erste Private Banking,  World és Prémium alapszerződései háromoldalúak. A Citi portfólió átvételekor  minden olyan szerződési és ügyfélkezelési feltétel, amely alapesetben a  háromoldalú ügyfélszerződésben került szabályozásra, az általános szerződési  feltételek közé kerül rögzítésre, így a Citibanktól átvett ügyfeleket nem  szükséges átszerződtetni.</li>
+                </ul>
+              </div>
+              <h5>
+26.	Ki és milyen összegig biztosítja a betéteimet?
+</h5>
+              <div class="gik_item">
+                <p>Az ügyfélszámlák átadása után az  Erste Bank Hungary Zrt.-nél bankszámlán és betétszámlán nyilvántartott  betétkövetelés a Hitelintézeti Törvény (2013. évi CCXXXVII. törvény) 214. § (1)  bekezdése alapján az Országos Betétbiztosítási Alap által személyenként és  hitelintézetenként összevontan legfeljebb százezer euró összeghatárig lesz  biztosított. Amennyiben Önnek az ügyfélszámlák átadása előtt az Erste Banknál  már van betétállománya, akkor a Hitelintézeti Törvény 214. § (10) bekezdése  alapján a Citibanknál és az Erste Banknál elhelyezett betétei az ügyfélszámlák  átadását követő három hónapig külön betétnek minősülnek, ezáltal azok ezen  időszak alatt külön-külön legfeljebb 100.000 euró összeghatárig lesznek  biztosítottak.</p>
+</div>
+              <h5>27.	Ki és milyen összegig biztosítja az értékpapírjaimat?</h5>
+              <div class="gik_item">
+                <p>Az ügyfélszámlák átadása után az  Erste Befektetési Zrt.-nél nyilvántartott értékpapír és pénz állomány a  Tőkepiaci törvény (2001. évi CXX. tv.) 217. § (2) bekezdése alapján  személyenként és szolgáltatóként összevontan legfeljebb százezer euró  összeghatárig biztosított a Befektető-védelmi Alap által.</p>
+</div>
+              <h5>28.	Megváltozik az értékpapír-számlaszámom, illetve a számlához kapcsolódó díjak és jutalékok?</h5>
+              <div class="gik_item">
+                <p>Az Ön Citibanknál vezetett  értékpapírszámláin elhelyezett állományok az Erste Befektetési Zrt.-nél  vezetendő új értékpapírszámláira kerülnek átvezetésre. A befektetési számlavezetési  díj összege és számítási módja változatlan marad, a számlához kapcsolódó díjak  és jutalékok pedig nem változnak, vagy kedvezőbbek lesznek.<br>
+                  Az Erste Befektetési Zrt-nél  nyitott értékpapírszámláihoz pénzszámla is kapcsolódik. A befektetések és a  kapcsolódó költségek elszámolása ezen pénzszámlára/pénzszámláról történik. Az  értékpapírszámla számlavezetési díja az Ön költségviselő banki folyószámlájáról  automatikusan átvezetésre kerül a pénzszámlájára.</p>
+              </div>
+              <h5>29.	Meddig vásárolhatok értékpapírt vagy kezdeményezhetek betétlekötést a Citibanknál?</h5>
+              <div class="gik_item">
+                <p>Új befektetési számla valamint  2016-os betéti és/vagy befektetési típusú Tartós Befektetési Számla nyitására  2016. december 2-ig van lehetőség a Citibankban.<br>
+                  Betétlekötés az ügyfélszámlák  átadásáig kezdeményezhető.</p>
+              </div>
+              <h4>ELEKTRONIKUS SZOLGÁLTATÁSOK</h4>
+              <h5>30.	Továbbra is fogom tudni használni az Citibank Online Internet Banking szolgáltatásomat és a Citibank Mobilbankot? </h5>
+              <div class="gik_item">
+                <p>Az  ügyfélszámlák átadásáig a Citibank Online és Citibank Mobilbank változatlanul  elérhetőek.<br>
+                Az  ügyfélszámlák átadását követően az Erste Bank a Citibankhoz hasonlóan innovatív  digitális szolgáltatásokkal áll az Ön rendelkezésére, mind az internetbanki  (Erste NetBank), mind a mobilbanki (Erste MobilBank) szolgáltatás tekintetében. </p>
+</div>
+              <h5>31.	Továbbra is fogom kapni az SMS értesítéseket a tranzakciókról?</h5>
+              <div class="gik_item">
+                <p>Amennyiben  az ügyfélszámlák átadásakor Ön rendelkezik Citibank SMS Hírnökszolgáltatással,  az ügyfélszámlák átadása után a folyószámlákra és betéti kártyákra vonatkozóan  az Erste Hírnök SMS szolgáltatás, hitelkártyákra vonatkozóan pedig az Erste  Hitelkártya Hírnök SMS szolgáltatás kerül beállításra, változatlan díjjal.</p>
+              </div>
+              <h5>32.	Meddig érem el a CitiPhone Banking ügyfélszolgálatát?</h5>
+              <div class="gik_item">
+                <p>Az ügyfélszámlák átadásáig és az Erste rendszerek  élesítéséig a CitiPhone Banking telefonos ügyfélszolgálat a megszokott módon  elérhető.</p>
+              </div>
+              <h5>33.	Mi történik a Citibank Online Internet Banking felületén beállított kedvezményezettjeimmel?</h5>
+              <div class="gik_item">
+                <p>A Citibank Online-on megadott kedvezményezettjei (kivéve a Citi Globális Utalás kedvezményezetteket) az ügyféladatok átadását követően átkerülnek az Erste Bankhoz, az Erste Netbankon és MobilBankon Sablonok néven találja majd meg.</p>
+              </div>
+              <h4>MINDKÉT BANK ÜGYFELE VAGYOK</h4>
+              <h5>34.	Már most is Erste ügyfél vagyok. Mi fog történni? Mi a teendőm?</h5>
+              <div class="gik_item">
+                <p>A  Citibanktól igénybevett termékekkel és szolgáltatásokkal kapcsolatban az  ügyfélszámlák átadásáig továbbra is a Citibankot kell keresnie. Amennyiben jelenleg  az Erstétől igénybevett termékekkel is rendelkezik, azokkal kapcsolatban  továbbra is az Erste Bankot és/vagy az Erste Befektetési Zrt-t kell keresnie.<br>
+                  Felhívjuk  szíves figyelmét, hogy az ügyfélszámlák átvétele előtt az Erste munkatársai az  Ön Citibanknál meglévő termékeivel kapcsolatban nem tudnak tájékoztatást adni. </p>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+              
+
+			  </div>
+              
+              
+            </div>
+            <!-- center col --> <!-- right col -->
+            <div class="col_right">
+                       <!-- box login -->
+            <div class="right_box login clr display_none">
+              <div class="txt">
+                <div class="login_form"><span class="txt1">Egyéni kód megadása:</span>
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="Belépés">
+                  </form>
+                  <div class="clear15"></div>
+                  A belépéshez szükséges egyéni kódot a Citibank által 2016 novemberében küldött tájékoztató levélben találja meg. </div>
+              </div>
+            </div>
+            <!-- box login --> 
+           <!-- box blue -->
+            <div class="right_box kerdesekesvalaszok_box2 display_none clr">
+				<div class="txt">
+					<p>Citi-Erste Kisokos, hogy minden egyértelmű legyen; eddigi szolgáltatásait és termékeit változatlan feltételek mellett megtalálja az Erste Banknál is. Itt megtudhatja miből mi lett, milyen néven találja kedvenc szolgáltatásait!</p>
+					<a href="kisokos.html" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+
+            
+                     
+             </div>
+            <!-- right col --></div>  
+            <div class="clear"></div>
+          </div>
+          
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        <!-- footer -->
+        <div class="clear"></div>
+        <footer>
+          <div class="center">
+            <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>
+              <nav>
+                <ul>
+                  <li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>
+              </nav>
+            </section>
+            <article> <a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>
+              <p>Copyright © 2016 Citigroup Inc.</p>
+            </article>
+          </div>
+        </footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>
+</body>
+</html>

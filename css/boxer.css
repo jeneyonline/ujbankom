@@ -1,0 +1,245 @@
+.right_box { -webkit-border-radius: 13px; border-radius: 13px; }
+
+.but_lblue { background:#83d0f5;  font-family: 'erstemedium'; font-size:18px; color:#00497b; text-decoration:none; display:inline-block; padding:10px 20px; border-radius:3px;}
+.right_box .txt .but_lblue { font-size:14px; padding:5px 10px; }
+
+.default_right_box { background:url(../img/default_right_box.jpg) no-repeat; height:438px; color:#00497b; }
+.default_right_box .txt { bottom:10px; }
+
+.premium_box { background:url(../img/premium_box.jpg) no-repeat; height:441px; }
+.premium_box .txt { bottom:70px; }
+
+.world_box { background:url(../img/world_box.jpg) no-repeat; height:469px; }
+.world_box .txt { bottom:78px; }
+
+.private_box { background:url(../img/private_box.jpg) no-repeat; height:470px; }
+.private_box .txt { bottom:70px; }
+
+.max_box { background:url(../img/max_box.jpg) no-repeat; height:329px; }
+.max_box .txt { bottom:15px; }
+
+.wizz_box { background:url(../img/wizz_box.jpg) no-repeat; height:343px; }
+.wizz_box .txt { bottom:15px; }
+
+.platinum_box { background:url(../img/platinum_box.jpg) no-repeat; height:386px; }
+.platinum_box .txt { bottom:15px; }
+
+.mass_box { background:url(../img/mass_box.jpg) no-repeat; height:383px; color:#002d72; }
+.mass_box .txt { bottom:64px; }
+
+.kisokos_box2 { background:url(../img/kisokos_box2.jpg) no-repeat; height:409px; color:#00497b; }
+.kisokos_box2 .txt { bottom:10px; }
+
+.kerdesekesvalaszok_box2 { background:url(../img/kerdesekesvalaszok_box2.jpg) no-repeat; height:456px; color:#00497b; }
+.kerdesekesvalaszok_box2 .txt { bottom:10px; }
+
+.layer-scroll { position:absolute; overflow-y:auto; left:0; right:0; top:0; bottom:0; z-index:100; }
+.layer-scroll .layer_bg { position:absolute; top:50px; margin-bottom:50px; }
+
+.premium_layer { background-color:#abe1fa; position:absolute; }
+.premium_layer .erste_logo { margin-bottom:20px; }
+.premium_layer .cont { background:url(../img/premium_layer.jpg) no-repeat center top; height:573px; margin:0 -20px -20px -20px; -webkit-border-radius: 10px; border-radius: 10px; color:white; font-size:16px; font-family: 'erstebook'; padding:0 100px; }
+.premium_layer .title { height:205px; padding-top:30px; }
+.premium_layer .title h3 { font-size: 34px; text-transform:uppercase; color:white; }
+.premium_layer .title h5 { font-size:22px; font-family: 'erstebook'; font-weight:normal; }
+.premium_layer .text h5 { font-size:16px; font-family: 'erstebold'; font-weight:normal; }
+.layer_bg .row { margin:0 -15px; }
+.layer_bg .row .col50 { float:left; width:50%; padding:0 15px; }
+.layer_close { cursor:pointer; }
+
+.world_layer { background:url(../img/world_popup.jpg) no-repeat right top; min-height:726px; color:#53565a; font-size:14px; font-family: 'erstebook'; padding-top:10px; position:absolute; overflow:hidden; background-size:cover; }
+.world_layer .text h5 { font-size:18px; font-family: 'erstebold'; font-weight:normal; }
+.world_layer .head { color:white; font-size:22px; padding:0 80px; height:100px; }
+.world_layer .layer_close { border-color:white; top:1px; z-index:100; }
+.world_layer .layer_close:after,
+.world_layer .layer_close:before { background:white; }
+.world_layer .erste_logo { float:right; margin-top:9px; -webkit-transform:scale(.8); transform:scale(.8); }
+.world_layer .cont { padding:0 80px; }
+.world_layer .title { max-width:685px; height:250px; }
+.world_layer .title h3 { font-size: 42px; color:white; text-shadow:0 0 5px rgba(0,0,0,.6), 0 0 5px rgba(0,0,0,.6); padding-bottom:10px; margin-bottom:5px; text-transform:none; }
+.world_layer .title h5 { font-size:18px; color:white; font-family: 'erstebook'; font-weight:normal; text-shadow:0 0 5px rgba(0,0,0,.6); }
+
+.private_layer { background:url(../img/private_layer.png) no-repeat top; min-height:854px; font-size:16px; font-family: 'erstebook'; position:absolute; background-size:cover; padding-top:10px; color:white; }
+.private_layer .erste_logo { background-image:url(../img/erste_logo_w.png); margin-bottom:45px; }
+.private_layer .layer_close { border-color:white; top:12px; z-index:100; }
+.private_layer .layer_close:after,
+.private_layer .layer_close:before { background:white; }
+.private_layer .title { float:left; margin-left:80px; height:270px; }
+.private_layer .title h3 { color:#aabacc; font-size:38px; font-family: 'erstebold'; font-weight:normal; margin-bottom:-15px; text-transform:none; padding-top:5px; }
+.private_layer .title h5 { color:#aabacc; font-size:23px; font-family: 'erstebold'; font-weight:normal; margin-bottom:0; }
+.private_layer .head { float:left; margin-left:60px; width:365px; color:#00385f; padding-top:20px; }
+.private_layer .text { clear:both; padding:0 80px; }
+.private_layer .text h5 { font-size:22px; font-family: 'erstebold'; }
+
+.card_layer { background:#66b6f0 url(../img/card_popup.png) no-repeat center top; position:absolute; font-size:16px; color:#00497b; font-family: 'erstebook'; }
+.card_layer .head { padding:0 80px; height:150px; padding-top:10px; }
+.card_layer .head img { float:right; margin:-60px -100px 0 0; }
+.card_layer .head h3 { font-size:34px; text-transform:none; font-family: 'erstebook'; }
+.card_layer .text { clear:both; padding:0 80px; }
+.card_layer .text h5 { font-size:24px; font-family: 'erstebook'; font-weight:normal; margin-bottom:10px; }
+
+.max_layer .icons { font-size:0; margin:0 -15px 5px; }
+.max_layer .icons a { height:33px; line-height:31px; border: 1px solid #00497b; -webkit-border-radius:6px; border-radius:6px; display:inline-block; color:#00497b; font-size:14px; text-decoration:none; padding:0 10px; margin:0 3px 10px; }
+.max_layer .icons a.active,
+.max_layer .icons a:hover { background:#00487a; color:white; }
+.max_layer .icons .icon { display:inline-block; background:url(../img/card_icons.png) no-repeat; vertical-align:middle; margin-right:5px; margin-top:-4px; }
+.max_layer .icons .icon-1 { background-position:0 0; width: 15px; height:18px; }
+.max_layer .icons a.active .icon-1,
+.max_layer .icons a:hover .icon-1 { background-position:-30px 0; }
+.max_layer .icons .icon-2 { background-position:0 -26px; width: 23px; height:15px; }
+.max_layer .icons a.active .icon-2,
+.max_layer .icons a:hover .icon-2 { background-position:-30px -26px; }
+.max_layer .icons .icon-3 { background-position:0 -51px; width: 24px; height:20px; }
+.max_layer .icons a.active .icon-3,
+.max_layer .icons a:hover .icon-4 { background-position:-30px -51px; }
+.max_layer .icons .icon-4 { background-position:0 -80px; width: 20px; height:20px; }
+.max_layer .icons a.active .icon-4,
+.max_layer .icons a:hover .icon-4 { background-position:-30px -80px; }
+.max_layer .icons .icon-5 { background-position:0 -109px; width: 28px; height:16px; }
+.max_layer .icons a.active .icon-5,
+.max_layer .icons a:hover .icon-5 { background-position:-30px -109px; }
+.max_layer .icons .icon-6 { background-position:0 -135px; width: 19px; height:22px; }
+.max_layer .icons a.active .icon-6,
+.max_layer .icons a:hover .icon-6 { background-position:-30px -135px; }
+.max_layer .icons .icon-7 { background-position:0 -160px; width: 19px; height:17px; }
+.max_layer .icons a.active .icon-7,
+.max_layer .icons a:hover .icon-7 { background-position:-30px -160px; }
+.max_layer .icons .icon-8 { background-position:0 -180px; width: 19px; height:20px; }
+.max_layer .icons a.active .icon-8,
+.max_layer .icons a:hover .icon-8 { background-position:-30px -180px; }
+.max_layer .left { float:left; width:60%; padding-right:30px; }
+.max_layer .input { background:white; border:1px solid #d5d4d3; -webkit-border-radius:4px; border-radius:4px; height:36px; padding-left:70px; margin-bottom:3px; }
+.max_layer .select { margin-left:-70px; float:left; }
+.max_layer .select .icons { width:70px; height:33px; margin:-1px; float:left; border:1px solid #d5d4d3; -webkit-border-radius:6px; border-radius:6px; padding-left:10px; box-shadow:0 3px 0 #d5d4d3; position:relative; cursor:pointer; }
+.max_layer .select .icons:after { content:''; position:absolute; right:10px; top:50%; margin-top:-2px;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 7px 6px 0 6px;
+border-color: #000000 transparent transparent transparent;}
+.max_layer .select .icons .icon { margin:6px auto 0; }
+.max_layer .select .icons .icon-2,
+.max_layer .select .icons .icon-5,
+.max_layer .select .icons .icon-7 { margin-top:8px; }
+.max_layer .input input { width:100%; color:#00497b; font-size:24px; font-family: 'erstebold'; height:35px; padding:4px 10px; }
+.max_layer .input input::-moz-placeholder { color: #cad2d9; opacity: 1; font-size:19px; }
+.max_layer .input input:-ms-input-placeholder { color: #cad2d9; font-size:19px; }
+.max_layer .input input::-webkit-input-placeholder { color: #cad2d9; font-size:19px; }
+.max_layer strong { font-size:12px; font-weight:normal; font-family: 'erstebold'; line-height:14px; display:block; }
+.max_layer .col50 { margin-bottom:15px; }
+.font12 { font-size:12px; }
+.max_layer .right { float:left; width:40%; }
+.max_layer .right .price { border:2px solid #00497b; -webkit-border-radius:10px; border-radius:10px; line-height:52px; width:270px; text-align:center; font-size:49px; font-family: 'erstebold'; margin:0 auto 15px; }
+
+.wizz_layer .text h5 { font-size:20px; line-height:24px; margin-bottom:25px; }
+.wizz_layer .left { float:left; width:65%; padding-right:30px; }
+.wizz_layer .right { float:left; width:35%; }
+.wizz_layer .input { position:relative; background:white; border:2px solid #c6007e; -webkit-border-radius:6px; border-radius:6px; height:40px; padding-left:105px; margin-bottom:30px; }
+.wizz_layer .input .label { position:absolute; left:10px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); font-size:12px; line-height:14px; color:#c6007e; font-family: 'erstebold'; width:100px; }
+.wizz_layer .input input { width:100%; color:#c6007e; font-size:24px; font-family: 'erstebold'; height:35px; padding:4px 10px; }
+.wizz_layer .input input::-moz-placeholder { color: #e27fbe; opacity: 1; font-size:19px; }
+.wizz_layer .input input:-ms-input-placeholder { color: #e27fbe; font-size:19px; }
+.wizz_layer .input input::-webkit-input-placeholder { color: #e27fbe; font-size:19px; }
+.wizz_layer .price { border:2px solid white; background:#c6007e; width:100px; font-family: 'erstebold'; text-align:right; padding:0 5px; line-height:22px; color:white; -webkit-border-radius:9px; border-radius:9px; margin:5px 0 15px; }
+.wizz_layer .price.big { font-size:28px; width:170px; line-height:38px; padding:0 15px; display:inline-block; vertical-align:middle; margin-bottom:0; margin-top:1px; float:right; }
+.wizz_layer .price-text { height:42px; position:relative; width:160px; display:block; float:left; }
+.wizz_layer .price-text span { position:absolute; left:0; top:50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width:100%; }
+
+.platinum_layer .head { max-width:900px; }
+.platinum_layer .text h5 { margin-bottom:35px; }
+.platinum_layer .input { position:relative; margin-bottom:25px; }
+.platinum_layer .input input { background:white; border:1px solid #d5d4d3; -webkit-border-radius:4px; border-radius:4px; color:#00497b; font-size:24px; font-family: 'erstebold'; height:36px; padding:4px 10px; text-align:right; width:190px; float:left; }
+.platinum_layer .input input::-moz-placeholder { color: #cad2d9; opacity: 1; font-size:19px; }
+.platinum_layer .input input:-ms-input-placeholder { color: #cad2d9; font-size:19px; }
+.platinum_layer .input input::-webkit-input-placeholder { color: #cad2d9; font-size:19px; }
+.platinum_layer .input .label { float:left; position:relative; width:210px; height:36px; }
+.platinum_layer .input .label span { position:absolute; left:0; top:50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); width:100%; padding-bottom:2px; }
+.platinum_layer .input.big .label { font-size:18px; height:56px; }
+.platinum_layer .input.big .label span { padding-bottom:0; }
+.platinum_layer .input.big input { border:2px solid #00497b; height:56px; font-size:49px; background-color:transparent; width:260px; -webkit-border-radius:9px; border-radius:9px; }
+.platinum_layer img { margin-left:40px; }
+.platinum_layer .col50:first-child { float:right; }
+
+.mass_layer { background:#66b6f0 url(../img/mass_popup.png) no-repeat center top; font-family: 'erstebook'; position:absolute; }
+.mass_layer .head { margin:30px 80px 0; color:#00497b; font-size:20px; height:240px; max-width:570px; }
+.mass_layer .head .right { text-align:right; font-style:italic; font-size:14px; padding-right:20px; }
+.mass_layer .head .right strong { font-family: 'erstemedium'; font-weight:normal; font-size:18px; }
+.mass_layer .text { padding:0 70px 40px; }
+.mass_layer .text img { max-width:100%; height:auto; }
+
+@media only screen and (max-width: 1199px) {
+	.premium_layer .cont { background-size:cover; height:auto; margin-bottom:-40px; padding-bottom:15px; }
+	.private_layer .title { margin-left:0; }
+	.max_layer .left { width:70%; }
+	.max_layer .right { width:30%; }
+	.wizz_layer .text { padding-left:0; padding-right:0; }
+	.wizz_layer .right { width:34%; }
+	.wizz_layer .left { width:66%; }
+	.wizz_layer .price-text { width:140px; }
+	.platinum_layer .col50:last-child { width:65%; }
+	.platinum_layer .col50:first-child { width:35%; }
+	.platinum_layer img { margin-left:0; }
+	.mass_layer .head { max-width:460px; }
+}
+@media only screen and (max-width: 969px) {
+	.world_layer .head,
+	.world_layer .cont { padding-left:0; padding-right:0; }
+	.premium_layer .cont { padding-left:20px; padding-right:20px; }
+	.world_layer .erste_logo { margin-top:16px; }
+	.card_layer .text { padding-left:20px; padding-right:20px; }
+	.card_layer .head { padding-left:20px; }
+	.card_layer .head img { width:50%; }
+	.max_layer .left,
+	.max_layer .right { width:100%; }
+	.max_layer .icons { margin-left:0; margin-right:0; }
+	.wizz_layer .right .col50,
+	.wizz_layer .left .col50 { width:100%; }
+	.wizz_layer .input { margin-bottom:15px; }
+	.wizz_layer .price-text { width:100%; height:auto; margin-bottom:15px; }
+	.wizz_layer .price.big { float:left; }
+	.wizz_layer .price { margin-bottom:5px; }
+	.wizz_layer .right .row { margin-bottom:10px; }
+	.wizz_layer .head h3 { font-size:31px; }
+	.platinum_layer .col50:last-child { width:55%; }
+	.platinum_layer .col50:first-child { width:45%; }
+	.platinum_layer img { margin-left:-90px; }
+	.mass_layer .head { margin-left:0; margin-right:0; max-width:360px; margin-top:0; }
+	.mass_layer .text { padding:0; }
+}
+@media only screen and (max-width: 639px) {
+	.layer_bg .row .col50 { width:100%; }
+	.premium_layer .title { height:auto; }
+	.layer-scroll .layer_bg { top:0; }
+	.premium_layer .cont { text-shadow:0 0 5px rgba(0,0,0,.6); text-align:center; }
+	.world_layer { background-position:75% top; }
+	.world_layer .erste_logo { margin-top:50px; }
+	.world_layer .head { height:140px; }
+	.world_layer .title h3 { font-size:28px; }
+	.world_layer .cont { text-align:center; }
+	.world_layer .title { height:auto; }
+	.world_layer .text { text-shadow:0 0 5px rgba(255,255,255,.9), 0 0 5px rgba(255,255,255,.9), 0 0 5px rgba(255,255,255,.9); }
+	.world_layer .title h3,
+	.world_layer .title h5 { text-shadow:0 0 5px rgba(0,0,0,.6), 0 0 5px rgba(0,0,0,.6), 0 0 5px rgba(0,0,0,.6); }
+	.card_layer .head { height:auto; padding-right:0; text-align:center; padding-left:0; }
+	.card_layer .head img { width:100%; float:none; margin-right:0; margin-top:-20px; margin-left:40px; margin-bottom:30px; }
+	.card_layer .head h3 { font-size:24px; }
+	.card_layer .text { text-align:center; padding-left:0; padding-right:0; }
+	.card_layer .text h5 { font-size:20px; }
+	.max_layer .left { padding-right:0; }
+	.wizz_layer .left,
+	.wizz_layer .right { width:100%; padding-right:0; }
+	.wizz_layer .input .label { text-align:left; font-size:11px; }
+	.wizz_layer .input { padding-left:100px; }
+	.wizz_layer .price { display:block; float:none !important; margin:5px auto 10px; }
+	.platinum_layer .input .label,
+	.platinum_layer .col50:first-child { width:100%; padding:0; }
+	.platinum_layer .col50:last-child { width:100%; }
+	.platinum_layer  .head h3 { padding-top:30px; }
+	.platinum_layer .input input { float:none; margin-left:auto; margin-right:auto; }
+	.platinum_layer img { margin-left:35px; width:auto; max-width:100%; height:auto; margin-bottom:40px; }
+	.mass_layer .head { height:auto; padding-top:120px; padding-bottom:30px; }
+	.mass_layer { background-size:contain; }
+	.mass_layer .layer_close { border-color:white; top:12px; z-index:100; }
+	.mass_layer .layer_close:after,
+	.mass_layer .layer_close:before { background:white; }
+}

@@ -1,0 +1,115 @@
+<div class="overlay" id="box_overlay" style="display:block"></div>
+    
+    <div class="layer_bg card_layer max_layer" style="display:none;">
+	<i class="layer_close" id="layer_close"></i>
+	<div class="erste_logo"></div>
+	<div class="cont">
+		<div class="head">
+			<img src="img/max_card.png" alt="">
+			<h3>Vásároljon kártyával, ahogy szokott és kapjon vissza 4 %-ot költéseiből!</h3>
+		</div>
+		<div class="text">
+			<h5>Válassza ki három kedvenc üzletkategóriáját, és kiszámoljuk, mennyit spórolhat egy évben!</h5>
+			<p>Az ikonok kiválasztásával és havi átlagos költése megadásával megmutatjuk, évente hány FT-ot kap vissza kártyájára.</p>
+			<div id="cat" class="icons">
+				<a href="javascript:;" id="catItem_benzinkut"><i class="icon icon-1"></i>Benzinkút</a>
+				<a href="javascript:;" class="" id="catItem_divat"><i class="icon icon-2"></i>Divat</a>
+				<a href="javascript:;" class="active" id="catItem_otthon"><i class="icon icon-3"></i>Otthon</a>
+				<a href="javascript:;" class="active" id="catItem_barkacs"><i class="icon icon-4"></i>Barkács, kert</a>
+				<a href="javascript:;" class="active" id="catItem_elektronikai"><i class="icon icon-5"></i>Elektronikai áruházak</a>
+				<a href="javascript:;" class="" id="catItem_utazasi"><i class="icon icon-6"></i>Utazás</a>
+				<a href="javascript:;" class="" id="catItem_szepseg"><i class="icon icon-7"></i>Szépségápolás, egészség</a>
+				<a href="javascript:;" class="" id="catItem_szorakozas"><i class="icon icon-8"></i>Szórakozás</a>
+			</div>
+			
+			<div class="left" id="sliderCnt">
+				<div class="row clr">
+					<div class="col50">
+						<div class="input update_1 item" id="sliderItem_benzinkut" >
+							<div class="select catSelect">
+                                                            <div id="cat_select_header_0" class="icons"><i class="icon icon-1" id="ikon_1" data-index="1" ></i></div>
+                                                            <div id="cat_select_option_0" class="max_select" style="display:none;">
+                                                                <div class="icons">
+                                                                    <a href="javascript:;" class="option " id="option_benzinkut"><i class="icon icon-1"></i>Benzinkút</a>
+                                                                    <a href="javascript:;" class="option inactive" id="option_divat"><i class="icon icon-2"></i>Divat</a>
+                                                                    <a href="javascript:;" class="option " id="option_otthon"><i class="icon icon-3"></i>Otthon</a>
+                                                                    <a href="javascript:;" class="option " id="option_barkacs"><i class="icon icon-4"></i>Barkács, kert</a>
+                                                                    <a href="javascript:;" class="option " id="option_elektronikai"><i class="icon icon-5"></i>Elektronikai áruházak</a>
+                                                                    <a href="javascript:;" class="option " id="option_utazasi"><i class="icon icon-6"></i>Utazás</a>
+                                                                    <a href="javascript:;" class="option " id="option_szepseg"><i class="icon icon-7"></i>Szépségápolás, egészség</a>
+                                                                    <a href="javascript:;" class="option inactive" id="option_szorakozas"><i class="icon icon-8"></i>Szórakozás</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+							<input type="text" class="max_price" data-isint="1" data-max="1" data-max_val="100000" placeholder="0 Ft  -  100 000 Ft">
+                                                        <input type='hidden' class='subSum' value='20000' />
+						</div>
+						<strong>Otthon - Lakberendeztési áruházak, bútorboltok, lakástextil üzletek</strong>
+					</div>
+					<div class="col50">
+						<div class="input update_2 item" id="sliderItem_divat" >
+							<div class="select catSelect">
+                                                            <div id="cat_select_header_1" class="icons"><i class="icon icon-2" id="ikon_2" data-index="2"></i></div>
+                                                            <div id="cat_select_option_1" class="max_select" style="display:none;">
+                                                                <div class="icons no_link">
+                                                                    <a href="javascript:;" class="option inactive" id="option_benzinkut"><i class="icon icon-1"></i>Benzinkút</a>
+                                                                    <a href="javascript:;" class="option " id="option_divat"><i class="icon icon-2"></i>Divat</a>
+                                                                    <a href="javascript:;" class="option " id="option_otthon"><i class="icon icon-3"></i>Otthon</a>
+                                                                    <a href="javascript:;" class="option " id="option_barkacs"><i class="icon icon-4"></i>Barkács, kert</a>
+                                                                    <a href="javascript:;" class="option " id="option_elektronikai"><i class="icon icon-5"></i>Elektronikai áruházak</a>
+                                                                    <a href="javascript:;" class="option " id="option_utazasi"><i class="icon icon-6"></i>Utazás</a>
+                                                                    <a href="javascript:;" class="option " id="option_szepseg"><i class="icon icon-7"></i>Szépségápolás, egészség</a>
+                                                                    <a href="javascript:;" class="option inactive" id="option_szorakozas"><i class="icon icon-8"></i>Szórakozás</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+							<input type="text" class="max_price" data-isint="1" placeholder="0 Ft  -  100 000 Ft">
+                                                        <input type='hidden' class='subSum' value='20000' />
+						</div>
+						<strong>Hobbi - Barkácsáruház, kertészet</strong>
+					</div>
+				</div>
+				<div class="row clr">
+					<div class="col50">
+						<div class="input update_3 item" id="sliderItem_szorakozas" >
+							<div class="select catSelect">
+                                                            <div id="cat_select_header_2" class="icons"><i class="icon icon-8"  id="ikon_3" data-index="8"></i></div>
+                                                            <div id="cat_select_option_2" class="max_select" style="display:none;">
+                                                                <div class="icons">
+                                                                    <a href="javascript:;" class="option inactive" id="option_benzinkut"><i class="icon icon-1"></i>Benzinkút</a>
+                                                                    <a href="javascript:;" class="option inactive" id="option_divat"><i class="icon icon-2"></i>Divat</a>
+                                                                    <a href="javascript:;" class="option " id="option_otthon"><i class="icon icon-3"></i>Otthon</a>
+                                                                    <a href="javascript:;" class="option " id="option_barkacs"><i class="icon icon-4"></i>Barkács, kert</a>
+                                                                    <a href="javascript:;" class="option " id="option_elektronikai"><i class="icon icon-5"></i>Elektronikai áruházak</a>
+                                                                    <a href="javascript:;" class="option " id="option_utazasi"><i class="icon icon-6"></i>Utazás</a>
+                                                                    <a href="javascript:;" class="option " id="option_szepseg"><i class="icon icon-7"></i>Szépségápolás, egészség</a>
+                                                                    <a href="javascript:;" class="option " id="option_szorakozas"><i class="icon icon-8"></i>Szórakozás</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+							<input type="text" class="max_price" data-isint="1" placeholder="0 Ft  -  100 000 Ft">
+                                                        <input type='hidden' class='subSum' value='20000' />
+						</div>
+						<strong>Elektronika -  Elektronikai áruház</strong>
+					</div>
+					<div class="col50">
+						<div class="input item" id="sliderItem_other" >
+							<div class="select">
+								<img src="img/egyeb.png" alt="">
+							</div>
+							<input type="text" class="max_price" placeholder="0 Ft  -  100 000 Ft">
+                                                        <input type='hidden' class='subSum' value='20000' />
+						</div>
+					</div>
+				</div>
+				
+				<p class="font12">Benzinkút kategória esetében maximum havi 30 000 Ft benzinkúton történő vásárlásig jár a 4%. Egy adott elszámolási időszakon belül a hitelkeret összegével megegyező, de legfeljebb 250 000 Ft vásárlási összeg után kaphat vásárlás visszatérítést a banktól. A korlátozás a 4%-os és az 1%-os visszatérítésre összevontan értendő.</p>
+			</div>
+			<div class="right">
+				<p>Az Ön által megadott értékek alapján, az 5000 Ft összegű vásárlás visszatérítéssel együtt</p>
+				<div class="price">0 Ft</div>
+				<p>éves megtakarítást érhet el pénzvisszafizetés formájában, ha Erste Max Hitelkártyával vásárol!</p>
+			</div>
+		</div>
+	</div>
+</div>

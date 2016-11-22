@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+	</head>
+	<body>
+     <div class="layer" id="hibauzenet_layer">
+            <div class="overlay"></div>
+            <div class="layer_bg" id="hb">
+                <a onClick="closeErrorLayer()" class="layer_close">X</a>
+                <h3>Hibaüzenet</h3>
+                <div class="layer_txt" id="hibauzenet"></div>
+                <div class="layer_but_center">
+                    <div class="layer_but">
+                        <input type="hidden" id="elemFocus" value="">
+                        <a onClick="closeErrorLayer()"  class="but_blue">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="wrapper">
+      <div class="m_cont">  
+        <!-- header --> 
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="index.html">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div>
+          <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu -->
+              <nav class="top_nav"><ul><li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li class="act"><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <div class="bg_code clr" id="top_login">
+                <div class="txt">Egyéni kód megadása </div>
+                <div class="code_form">
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="">
+                  </form>
+                </div>
+              </div>
+              <div class="bg_code bg_logged clr" id="top_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+        
+        <!-- content -->
+        <section>
+          <div class="center clr">
+            <div class="cont_inner"> 
+              <!-- left col -->
+              <div class="col_left">
+                <nav class="left_nav">
+                  <div class="title">Dokumentumok</div>
+                </nav>
+              </div>
+              <!-- left col --> 
+              <!-- center col -->
+              <div class="col_center">
+                <ul class="breadcrumb clr">
+                  <li><a href="index.html">Főoldal</a></li>
+                  <li>Dokumentumok</li>
+                </ul>
+                <h2><span class="title">Dokumentumok</span></h2>
+               
+                <!-- dokumentumok -->
+                <div class="doku_list">
+                 <p>A teljes körű tájékoztatás érdekében, kérjük, tekintse át a 2017. február 4. napján hatályba lépő részletes szerződési feltételeket és kondíciókat.</p>
+                  <div class="col"> <span class="cat_hun">Magyar</span>
+                    <h5>Általános</h5>
+                    <a href="pdf/erste_lakossagi_banki_szolgaltatasok_altalanos_uzleti_feltetelei_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Erste Lakossági Banki Szolgáltatások Általános Üzleti Feltételei Citibanktól átvett Ügyfelek részére </a><br>
+                    <a href="pdf/erste_bank_hungary_zrt_uzletszabalyzat.pdf" class="cat_pdf" target="_blank">Erste Bank Hungary Zrt. Üzletszabályzat</a><br>
+                    <a href="pdf/1_szamu_melleklet_penzugyi_es_kiegeszito_penzugyi_szolgaltatasi_tevekenysegre_vonatkozo_uzletszabalyzat.pdf" class="cat_pdf cat_sub" target="_blank">1.	számú melléklet:  Pénzügyi és kiegészítő pénzügyi szolgáltatási tevékenységre vonatkozó Üzletszabályzat</a><br>
+
+                    <h5>Hitelkártya</h5>
+                    <a href="pdf/lakossagi_hitel_hirdetmeny_5_1_szamu_melleklete_citibanktol_atvett_hitelkartyak.pdf" class="cat_pdf" target="_blank">Lakossági Hitel Hirdetmény 5.1. számú melléklete: Citibanktól átvett hitelkártyák</a><br>
+                    <a href="pdf/erste_lakossagi_hitelkartya_altalanos_szerzodesi_feltetelei.pdf" class="cat_pdf" target="_blank">Erste Lakossági Hitelkártya Általános Szerződési Feltételei </a><br>
+                    <a href="pdf/wizz_air_kartyak_pontgyujto_feltetelei.pdf" class="cat_pdf" target="_blank">Wizz Air Kártyák Pontgyűjtő Feltételei </a><br>
+                    <a href="pdf/erste_max_hitelkartya_program_reszveteli_feltetelek.pdf" class="cat_pdf" target="_blank">Erste Max Hitelkártya program Részvételi Feltételek </a><br>
+                    <a href="pdf/erste_platinum_program_reszveteli_feltetelek.pdf" class="cat_pdf" target="_blank">Erste Platinum Program Részvételi Feltételek </a><br>
+                    <a href="pdf/hitelkartya_atfogo_hitelfedezeti_biztositas.pdf" class="cat_pdf" target="_blank">Hitelkártya Átfogó Hitelfedezeti Biztosítás</a><br>
+                    <a href="pdf/hitelkartya_reszletfizetesi_szolgaltatasokhoz_kapcsolodo_hitelfedezeti_biztositas.pdf" class="cat_pdf" target="_blank">Hitelkártya Részletfizetési Szolgáltatásokhoz kapcsolódó hitelfedezeti biztosítás</a><br>
+                    <a href="pdf/hitelfedezeti_biztositas.pdf" class="cat_pdf" target="_blank">Hitelfedezeti biztosítás</a><br>
+                    <a href="pdf/dombornyomott_kartyakhoz_kapcsolodo_utasbiztositas_biztositasi_feltetelek.pdf" class="cat_pdf" target="_blank">Dombornyomott kártyákhoz kapcsolódó utasbiztosítás – biztosítási feltételek </a><br>
+
+                    <h5>Folyószámla</h5>
+                    <a href="pdf/lakossagi_bankszamla_es_beteti_kamat_hirdetmeny.pdf" class="cat_pdf" target="_blank">Lakossági Bankszámla és Betéti kamat Hirdetmény </a><br>
+                    <a href="pdf/a_citibank_lakossagi_allomany_atruhazasa_soran_atvett_tovabbiakban_nem_ertekesitett_lakossagi_bankszamlak.pdf" class="cat_pdf cat_sub" target="_blank">A Citibank lakossági állomány átruházása során átvett, továbbiakban nem értékesített lakossági bankszámlák</a><br>
+
+
+
+
+
+                    <a href="pdf/lakossagi_folyoszamlahitel_a_citibanktol_atvett_ugyfelek_reszere_c_hirdetmeny.pdf" class="cat_pdf" target="_blank">Lakossági folyószámlahitel a Citibanktól átvett ügyfelek részére c. Hirdetmény </a><br>
+                    <a href="pdf/dombornyomott_kartyakhoz_kapcsolodo_utasbiztositas_biztositasi_feltetelek.pdf" class="cat_pdf" target="_blank">Dombornyomott kártyákhoz kapcsolódó utasbiztosítás – biztosítási feltételek</a><br>
+
+
+                    <h5>Megtakarítások és befektetések</h5>
+                    <a href="pdf/lakossagi_bankszamla_es_beteti_kamat_hirdetmeny.pdf" class="cat_pdf" target="_blank">Lakossági Bankszámla és Betéti kamat Hirdetmény </a><br>
+                    <a href="pdf/hirdetmeny_kivonat_a_citibanktol_atvett_lakossagi_ugyfelek_beteti_kamataira_vonatkozoan.pdf" class="cat_pdf cat_sub" target="_blank">Hirdetmény kivonat a Citibanktól átvett lakossági ügyfelek betéti kamataira vonatkozóan</a><br>
+                    
+                    
+                    <a href="pdf/erste_befektetesi_zrt_altalanos_uzletszabalyzata.pdf" class="cat_pdf" target="_blank">Erste Befektetési Zrt. általános Üzletszabályzata</a><br>
+                    <a href="pdf/erste_befektetesi_zrt_altalanos_uzletszabalyzata_korrekturazott.pdf" class="cat_pdf" target="_blank">Erste Befektetési Zrt. általános Üzletszabályzata - korrektúrázott</a><br>
+                    
+                    <a href="pdf/1_szamu_melleklet_a_tarsasag_altalanos_ugynokei.pdf" class="cat_pdf cat_sub" target="_blank">1.	számú melléklet: A Társaság általános ügynökei </a><br>
+                    <a href="pdf/2_szamu_melleklet_az_erste_befektetesi_zrt_altal_kiszervezett_tevekenysegek_kore_es_a_kiszervezett_tevekenysegek_vegzoi.pdf" class="cat_pdf cat_sub" target="_blank">2.	számú melléklet: Az Erste Befektetési Zrt. által kiszervezett tevékenységek köre és a kiszervezett tevékenységek végzői </a><br>
+
+                    <a href="pdf/3_szamu_melleklet_az_erste_befektetesi_zrt_altal_alkalmazott_szerzodesmintak.pdf" class="cat_pdf cat_sub" target="_blank">3.	számú melléklet: Az Erste Befektetési Zrt. által alkalmazott szerződésminták </a><br>
+                    <a href="pdf/4_szamu_melleklet_az_erste_befektetesi_zrt_altal_alkalmazott_KHR_rel.pdf" class="cat_pdf cat_sub" target="_blank"> 4. számú melléklet: Az Erste Befektetési Zrt. által alkalmazott KHR-rel kapcsolatos szabályozása</a><br>
+                    <a href="pdf/5_szamu_melleklet_az_erste_befektetesi_zrt_altal_alkalmazott_legjobb_vegrehajtasi_politika.pdf" class="cat_pdf cat_sub" target="_blank">5.	számú melléklet: Az Erste Befektetési Zrt. által alkalmazott legjobb végrehajtási politika</a><br>
+                    <a href="pdf/5_szamu_melleklet_1_melleklete_lehetseges_vegrehajtasi_helyszinek_jegyzeke.pdf" class="cat_pdf cat_sub" target="_blank">5. számú melléklet 1. melléklete: Lehetséges végrehajtási helyszínek jegyzéke </a><br>
+                    <a href="pdf/5_szamu_melleklet_az_erste_befektetesi_zrt_altal_alkalmazott_legjobb_vegrehajtasi_politika_kiegeszitese.pdf" class="cat_pdf cat_sub" target="_blank">5. számú melléklet: Az Erste Befektetési Zrt. által alkalmazott legjobb végrehajtási politika kiegészítése</a><br>
+
+                    <a href="pdf/5_szamu_melleklet_1_melleklete_lehetseges_vegrehajtasi_helyszinek_jegyzek_kiegeszitese.pdf" class="cat_pdf cat_sub" target="_blank">5. számú melléklet 1. melléklete: Lehetséges végrehajtási helyszínek jegyzék kiegészítése</a><br>
+                    <a href="pdf/6_szamu_melleklet_osszeferhetetlenseg_elkerulesevel_kapcsolatos_osszefoglalo_rendelkezesek.pdf" class="cat_pdf cat_sub" target="_blank">6. számú melléklet: Összeférhetetlenség elkerülésével kapcsolatos összefoglaló rendelkezések </a><br>
+                    <a href="pdf/7_szamu_melleklet_panaszok_kezelesere_vonatkozo_szabalyzat.pdf" class="cat_pdf cat_sub" target="_blank">7. számú melléklet: Panaszok kezelésére vonatkozó szabályzat </a><br>
+                    <a href="pdf/8_szamu_melleklet_adatkezelesi_tajekoztato.pdf" class="cat_pdf cat_sub" target="_blank">8. számú melléklet: Adatkezelési tájékoztató </a><br>
+                    <a href="pdf/a_tarsasag_uzleti_orai_es_penztari_nyitvatartasa.pdf" class="cat_pdf" target="_blank">A Társaság üzleti órái és pénztári nyitvatartása </a><br>
+
+                    <a href="pdf/uzleti_dijjegyzek.pdf" class="cat_pdf" target="_blank">Üzleti Díjjegyzék </a><br>
+                    <a href="pdf/az_erste_befektetesi_zrt_hatalyos_uzleti_dijjegyzekenek_kiegeszitese_a_world_szolgaltatasok_kereteben_alkalmazott_egyes_eltero_dijakrol_es_koltsege.pdf" class="cat_pdf" target="_blank">Az Erste Befektetési Zrt. hatályos üzleti díjjegyzékének kiegészítése a World szolgáltatások keretében alkalmazott egyes eltérő díjakról és költségekről </a><br>
+                    <a href="pdf/az_erste_befektetesi_zrt_hatalyos_uzleti_dijjegyzekenek_kiegeszitese_a_private_banking_szolgaltatasok_kereteben_alkalmazott_egyes_eltero_dijakrol_e.pdf" class="cat_pdf" target="_blank">Az Erste Befektetési Zrt. hatályos üzleti díjjegyzékének kiegészítése a Private Banking szolgáltatások keretében alkalmazott egyes eltérő díjakról és költségekről</a><br>
+                    <a href="pdf/hirdetmeny_az_erste_befektetesi_zrt_altal_kinalt_befektetescsomagokrol.pdf" class="cat_pdf" target="_blank">Hirdetmény az Erste Befektetési Zrt. által kínált befektetéscsomagokról </a><br>
+                    <a href="pdf/hirdetmeny_az_erste_befektetesi_zrt_altal_nyujtott_szolgalatasokrol_az_ugylet_elotti_tajekoztatas_kereteben.pdf" class="cat_pdf" target="_blank">Hirdetmény az Erste Befektetési Zrt. által nyújtott szolgáltatásokról az ügylet előtti tájékoztatás keretében</a><br>
+
+                    <a href="pdf/hirdetmeny_a_napvegi_oszevont_tranzakcios_teljesitesi_ertesitesrol.pdf" class="cat_pdf" target="_blank">Hirdetmény a napvégi összevont tranzakciós teljesítési értesítésről </a><br>
+                    <a href="pdf/uzleti_dijjegyzek_a_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Üzleti Díjjegyzék a Citibanktól átvett ügyfelek részére</a><br> 
+
+
+
+                   <h5>Személyi kölcsön és jelzálogkölcsön</h5>
+                    <a href="pdf/szabad_felhasznalasu_forint_jelzalogkolcson_altalanos_szerzodesi_feltetelek_a_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Szabad Felhasználású Forint Jelzálogkölcsön Általános Szerződési Feltételek a Citibanktól átvett ügyfelek részére </a><br>
+                    <a href="pdf/lakascelu_jelzalogkolcson_altalanos_szerzodesi_feltetelei_a_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Lakáscélú jelzálogkölcsön általános szerződési feltételei a Citibanktól átvett ügyfelek részére</a><br>
+                    <a href="pdf/szabad_felhasznalasu_es_hitelkivalto_jelzalogkolcson_altalanos_szerzodesi_feltetelei_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Szabad Felhasználású és Hitelkiváltó Jelzálogkölcsön Általános Szerződési Feltételei - Citibanktól átvett ügyfelek részére </a><br>
+                    <a href="pdf/erste_szemelyi_hitel_altalanos_szerzodesi_feltetelei_a_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Erste Személyi Hitel Általános Szerződési Feltételei a Citibanktól átvett ügyfelek részére </a><br>
+                    <a href="pdf/erste_szemelyi_kolcson_altalanos_szerzodesi_feltetelei_a_citibanktol_atvett_ugyfelek_reszere.pdf" class="cat_pdf" target="_blank">Erste Személyi Kölcsön Általános Szerződési Feltételei a Citibanktól átvett ügyfelek részére </a><br>
+
+                    <a href="pdf/erste_szemelyi_hitel_kolcson_a_citibanktol_atvett_ugyfelek_reszere_c_hirdetmeny.pdf" class="cat_pdf" target="_blank">Erste Személyi Hitel/Kölcsön a Citibanktól átvett ügyfelek részére c. Hirdetmény</a><br>
+                    <a href="pdf/lakascelu_valamint_szabad_felhasznalasu_es_hitelkivalto_jelzalogkolcsonok_kondicioi_citibanktol_atvett_ugyfelek_reszere_c_hirdetmeny.pdf" class="cat_pdf" target="_blank">Lakáscélú, valamint szabad felhasználású és hitelkiváltó jelzálogkölcsönök kondíciói Citibanktól átvett ügyfelek részére c. Hirdetmény </a><br> 
+
+
+
+                  </div>
+                  <a name="en" id="en"></a>
+                  <div class="col">
+                    <p>For detailed information, please read the general terms and conditions effective from 04.02.2017.</p> <span class="cat_en">English</span>
+                  
+                    <h5>General</h5>
+                    <a href="pdf/erste_general_business_conditions_for_erste_retail_banking_services_for_customers_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">Erste General Business Conditions for Erste Retail Banking Services for Customers taken over from Citibank</a><br>
+                    <a href="pdf/erste_bank_hungary_zrt_business_rules.pdf" class="cat_pdf" target="_blank">Erste Bank Hungary Zrt. Business Rules</a><br>
+                    <a href="pdf/appendix_no_1_to_the_business_rules_on_financial_and_supplementary_financial_services.pdf" class="cat_pdf cat_sub" target="_blank">Appendix No.1.to the Business Rules on Financial and Supplementary Financial Services </a><br>
+                    <h5>Credit cards</h5>
+                    <a href="pdf/credit_cards_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">Retail Credit Announcement Annex 5.1 Credit cards taken over from Citibank</a><br>
+                    <a href="pdf/erste_retail_credit_card_general_terms_and_conditions.pdf" class="cat_pdf" target="_blank">Erste Retail Credit Card General Terms and Conditions</a><br>
+                    <a href="pdf/travel_insurance_terms_and_conditions.pdf" class="cat_pdf" target="_blank">Travel Insurance Terms and Conditions for Bank Cards</a><br>
+
+
+
+                    <h5>Accounts</h5>
+                   <a href="pdf/fees_and_comissions_for_retail_bank_accounts_taken_over_during_the_transfer_of_the_citibank_retail_portfolio.pdf" class="cat_pdf" target="_blank">Fees and Commissions for Retail Bank Accounts Taken Over During the Transfer of the Citibank Retail Portfolio and No Longer Sold</a><br>
+                     <a href="pdf/retail_overdraft_facility_for_customers_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">Retail overdraft facility for customers taken over from Citibank</a><br>
+
+                    <a href="pdf/travel_insurance_terms_and_conditions.pdf" class="cat_pdf" target="_blank">Travel Insurance Terms and Conditions for Bank Cards</a><br>
+                    <h5>Savings and investments</h5>
+                  
+                    <a href="pdf/extract_of_announcement_on_deposit_products_taken_over_during_the_transfer_of_the_citibank_retail_portfolio.pdf" class="cat_pdf" target="_blank">Extract of Announcement on Deposit Products Taken Over During the Transfer of the Citibank Retail Portfolio
+</a><br>
+
+                    
+                    <a href="pdf/business_schedule_of_fees_of_erste_befektetesi_zrt.pdf" class="cat_pdf" target="_blank">Business Schedule Of Fees of Erste Befektetési Zrt</a><br>
+                    <a href="pdf/supplement_to_the_bus_schedule_of_fees_of_erste_bef_zrt_in_force_as_of_17_oct_2016_regarding_certain_different_fees_and_charges_applied_to_pb_serv.pdf" class="cat_pdf" target="_blank">Supplement to the Business Schedule of Fees of Erste Befektetési Zrt. in force as of 17 October 2016 regarding certain different fees and charges applied to World Services </a><br>
+					<a href="pdf/supplement_to_the_business_schedule_of_fees_of_erste_bef_zrt_in_force_as_of_17_october_2016_regarding_certain_diff_fees_and_charges_applied_to_wor.pdf" class="cat_pdf" target="_blank">Supplement to the Business Schedule of Fees of Erste Befektetési Zrt. in force as of 17 October 2016 regarding certain different fees and charges applied to Private Banking </a><br>
+                    <a href="pdf/announcement_on_investment_packadges_offered_by_erste_befektetesi_zrt.pdf" class="cat_pdf" target="_blank">Announcement On Iinvestment Packadges Offered By Erste Befektetési Zrt.</a><br> 
+                       <a href="pdf/announcement_on_aggregate_transaction_notice_on_close_of_business.pdf" class="cat_pdf" target="_blank">Announcement On Aggregate Transaction Notice on Close of Business</a><br>                    
+                    
+                    <a href="pdf/erste_investment_ltd_general_terms_of_business.pdf" class="cat_pdf" target="_blank">Erste Investment Ltd. General Terms of Business </a><br>
+                    <a href="pdf/annex_1_tied_agents_and_intermediaries.pdf" class="cat_pdf cat_sub" target="_blank">Annex 1. Tied Agents and intermediaries </a><br>
+                    <a href="pdf/annex_2_scope_of_activities_outsourced_by_erste_investment_ltd_and_entities_performing_such_activities.pdf" class="cat_pdf cat_sub" target="_blank">Annex 2. Scope of activities outsourced by Erste Investment Ltd. and Entities performing such activities </a><br>
+                    <a href="pdf/annex_3_contract_templates_used_by_erste_investment_ltd.pdf" class="cat_pdf cat_sub" target="_blank">Annex 3. Contract Templates Used by Erste Investment Ltd</a><br>
+
+                    <a href="pdf/annex_4_notification_on_the_central_credit_information_system_ccis.pdf" class="cat_pdf cat_sub" target="_blank">Annex 4.  Notification on the Central Credit Information System (CCIS) </a><br>
+                    <a href="pdf/annex_5_erste_befektetesi_zrt_best_execution_policy.pdf" class="cat_pdf cat_sub" target="_blank">Annex 5. Erste Befektetési Zrt. best execution policy</a><br>
+                    <a href="pdf/annex_5_annex_no_1_list_of_possible_trading_venues.pdf" class="cat_pdf cat_sub" target="_blank">Annex 5. Annex no. 1 – List of possible trading venues</a><br>
+                    <a href="pdf/annex_5_best_execution_policy_supplement_applicable_to_internet_trader_regulations.pdf" class="cat_pdf cat_sub" target="_blank">Annex 5. Best Execution Policy Supplement Applicable to Internet Trader Regulations</a><br>
+                    <a href="pdf/annex_5_annex_no_1_list_of_possible_trading_venues_erste_trader.pdf" class="cat_pdf cat_sub" target="_blank">Annex 5. Annex no. 1 – List of possible trading venues – Erste Trader </a><br>
+                    <a href="pdf/annex_6_summary_description_of_conflict_of_interest_policy.pdf" class="cat_pdf cat_sub" target="_blank">Annex 6. Summary Description of Conflict of Interest Policy</a><br>
+                    <a href="pdf/annex_7_policy_and_information_related_to_the_handling_of_complaints.pdf" class="cat_pdf cat_sub" target="_blank">Annex 7. policy and information related to the handling of complaints </a><br>
+                    <a href="pdf/annex_8_erste_befektetesi_zrts_the_company_data_management_notice.pdf" class="cat_pdf cat_sub" target="_blank">Annex 8. Erste Befektetési Zrt’s (the "Company") data management notice</a><br>
+                    <a href="pdf/business_hours_of_the_company_and_opening_hours_of_the_cash_desk.pdf" class="cat_pdf" target="_blank">Business hours of the Company and opening hours of the cash-desk</a><br>
+                    <a href="pdf/business_schedule_of_fees_of_erste_befektetesi_zrt_for_customer_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">Business Schedule of Fees of Erste Befektetesi Zrt For Customer Taken Over From Citibank</a><br>
+ <h5>Personal Loans</h5>
+                    <a href="pdf/general_terms_of_contract_for_erste_szemelyi_hitel_personal_loan_for_customers_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">General Terms of Contract for ‘Erste Személyi Hitel’ Personal Loan for Customers Taken Over from Citibank</a><br>
+                                        <a href="pdf/erste_personal_credit_loan_for_customers_taken_over_from_citibank.pdf" class="cat_pdf" target="_blank">Erste personal credit/loan for customers taken over from Citibank</a><br>
+
+                  </div>
+                </div>
+                <!-- dokumentumok -->
+                
+                <div class="news_list">
+                  <div class="clear"></div>
+                </div>
+                <!-- dokumentumok lista --> 
+                
+              </div>
+              <!-- center col --> <!-- right col -->
+            <div class="col_right">
+                       <!-- box login -->
+            <div class="right_box login clr display_none">
+              <div class="txt">
+                <div class="login_form"><span class="txt1">Egyéni kód megadása:</span>
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="Belépés">
+                  </form>
+                  <div class="clear15"></div>
+                  A belépéshez szükséges egyéni kódot a Citibank által 2016 novemberében küldött tájékoztató levélben találja meg. </div>
+              </div>
+            </div>
+            <!-- box login --> 
+            <!-- box blue -->
+            <div class="right_box default_right_box display_none clr">
+				<div class="txt">
+					<p>Az átadás folyamatáról és a tájékoztatás részletes menetrendjéről átlátható képet kaphat az Általános tudnivalók menüpontot megnyitva. Itt egy folyamatábra segítségével megnézheti, milyen lépések várnak Önre az elkövetkező hónapokban!</p>
+					<a href="altalanos_informacio.html" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+
+            
+                     
+             </div>
+            <!-- right col --></div>
+            <div class="clear"></div>
+
+          </div>
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        <!-- footer -->
+        <div class="clear"></div>
+        <footer>
+          <div class="center">
+            <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>
+              <nav>
+                <ul>
+                  <li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>
+              </nav>
+            </section>
+            <article> <a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>
+              <p>Copyright © 2016 Citigroup Inc.</p>
+            </article>
+          </div>
+        </footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+    </head>
+    <body>
+        <div class="layer" id="hibauzenet_layer">
+            <div class="overlay"></div>
+            <div class="layer_bg" id="hb">
+                <a onClick="closeErrorLayer()" class="layer_close">X</a>
+                <h3>Hibaüzenet</h3>
+                <div class="layer_txt" id="hibauzenet"></div>
+                <div class="layer_but_center">
+                    <div class="layer_but">
+                        <input type="hidden" id="elemFocus" value="">
+                        <a onClick="closeErrorLayer()"  class="but_blue">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="wrapper">
+      <div class="m_cont"> 
+        
+        <!-- header -->
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="#">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div> <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu -->
+              <nav class="top_nav">
+               <ul>
+                  <li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <div class="bg_code clr" id="top_login">
+                <div class="txt">Egyéni kód megadása <br>
+                  a személyes tartalmakhoz:</div>
+                <div class="code_form">
+                  <form>
+                    <input type="text" maxlength="7" class="code_inp">
+                    <input type="submit" class="code_but" value="">
+                  </form>
+                </div>
+              </div>
+              <div class="bg_code bg_logged clr" id="top_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+
+		        <!-- content -->
+        <section>
+          <div class="center clr">
+            <div class="cont_inner"> 
+              <!-- left col -->
+              <div class="col_left">
+    <nav class="left_nav">
+      <div class="title">Termékeim és szolgáltatásaim</div>
+      <ul id="login_before">
+        <li><a href="szegmens-offline.html">Termékek</a>
+            <ul>
+                <li><a href="hitelkartyak.html">Hitelkártya</a>
+                <li><a href="folyoszamla.html">Folyószámla</a></li>
+                <li><a href="megtakaritasok-es-befektetesek.html">Megtakarítások és befektetések</a></li>
+                <li><a href="szemelyi-kolcson-es-jelzalogkolcson.html">Személyi kölcsön és jelzálogkölcsön</a></li>
+                <li><a href="jelenleg-az-erste-ugyfele-vagyok.html">Jelenleg az Erste ügyfele vagyok</a></li>
+            </ul>
+        </li>
+        <li>
+           <li><a href="szolgaltatasok.html">Kiszolgálási csatornák</a>
+                      <ul>
+                        <li><a href="szolgaltatasok_erste_netbank.html">Erste NetBank</a></li>
+                        <li><a href="szolgaltatasok_erste_telebank.html">Erste TeleBank</a></li>
+                        <li><a href="szolgaltatasok_erste_fiokok_orszagszerte.html">Erste fiókok országszerte</a></li>
+                        <li><a href="szolgaltatasok_erste_applikaciok.html">Erste Applikációk</a>
+                          <ul>
+                            <li><a href="szolgaltatasok_erste_mobilbank.html">Erste MobilBank</a></li>
+                            <li><a href="szolgaltatasok_erste_mobilepay.html">Erste MobilePay alkalmazás</a></li>
+                            <li><a href="szolgaltatasok_erste_sorszamhuzo.html">Erste Sorszámhúzó applikáció</a></li>
+                          </ul>
+                        </li>
+            </ul>
+        </li>
+      </ul>
+      <ul id="login_after" class="productHide">
+        <li><a href="szegmens-mass.html">Termékek</a>
+            <ul>
+                <li data-cardtype="ht" class="productHide"><a href="erste-visa-classic-hitelkartya-mass.html">Erste Visa Classic Hitelkártya</a></li>
+                <li data-cardtype="ht" class="productHide"><a href="erste-max-hitelkartya-mass.html">Erste Max Hitelkártya</a></li>
+                <li data-cardtype="ht" class="productHide"><a href="erste-platinum-hitelkartya-mass.html">Erste Platinum Hitelkártya</a></li>
+                <li data-cardtype="ht" class="productHide"><a href="erste-wizz-air-hitelkartya-mass.html">Erste Wizz Air Hitelkártya</a></li>
+                <li data-cardtype="ht" class="productHide"><a href="erste-max-hitelkartya-telekom-mass.html">Erste Max Hitelkártya (Telekom)</a></li>
+                
+                <li data-currentaccount="fd" class="productHide"><a href="erste-comfort-plus-folyoszamla-mass.html">Erste Comfort Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-control-plus-folyoszamla-mass.html">Erste Control Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-global-plus-folyoszamla-mass.html">Erste Global Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-net-plus-folyoszamla-mass.html">Erste Net Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-premium-c-plus-folyoszamla-mass.html">Erste Prémium C Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-premium-plus-folyoszamla-mass.html">Erste Prémium Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-private-c-plus-folyoszamla-mass.html">Erste Private C Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-top-plus-folyoszamla-mass.html">Erste TOP Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-world-plus-folyoszamla-mass.html">Erste World Plus Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-world-private-plus-folyoszamla-mass.html">Erste World Private Folyószámla</a></li>
+                <li data-currentaccount="fd" class="productHide"><a href="erste-world-vip-folyoszamla-mass.html">Erste World VIP Folyószámla</a></li>
+                
+                <li id="bkt" class="productHide"><a href="megtakaritasok-es-befektetesek-mass.html">Megtakarítások és befektetések</a></li>
+                <li id="szhej" class="productHide"><a href="szemelyi-kolcson-es-jelzalogkolcson-mass.html">Személyi kölcsön és jelzálogkölcsön</a></li>
+                <li><a href="jelenleg-az-erste-ugyfele-vagyok-mass.html">Jelenleg az Erste ügyfele vagyok</a></li>
+            </ul>
+        </li>
+        <li><a href="szolgaltatasok.html">Kiszolgálási csatornák</a>
+                      <ul>
+                        <li><a href="szolgaltatasok_erste_netbank.html">Erste NetBank</a></li>
+                        <li><a href="szolgaltatasok_erste_telebank.html">Erste TeleBank</a></li>
+                        <li><a href="szolgaltatasok_erste_fiokok_orszagszerte.html">Erste fiókok országszerte</a></li>
+                        <li><a href="szolgaltatasok_erste_applikaciok.html">Erste Applikációk</a>
+                          <ul>
+                            <li><a href="szolgaltatasok_erste_mobilbank.html">Erste MobilBank</a></li>
+                            <li><a href="szolgaltatasok_erste_mobilepay.html">Erste MobilePay alkalmazás</a></li>
+                            <li><a href="szolgaltatasok_erste_sorszamhuzo.html">Erste Sorszámhúzó applikáció</a></li>
+                          </ul>
+                        </li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+</div>
+              <!-- left col --> 
+              <!-- center col -->
+              <div class="col_center">
+                <ul class="breadcrumb clr">
+                  <li><a href="#">Főoldal</a></li>
+                  <li><a href="#">Termékek és kiszolgálási csatornák</a></li>
+                  <li>Erste termékek</li>
+                </ul>
+                <h2>Hitelkártyák </h2>
+                
+            <!-- box full -->   
+                
+                <!-- termek oldal  -->
+                <div class="cont_prod"> 
+                <div class="txt">
+                	<p><strong>Jelenlegi Citibank hitelkártyáját az ügyfélszámlák átadását, azaz 2017. február 4-ét követően, új, az Erste Bank által kibocsátott hitelkártyára cseréljük. </strong></p>
+
+<p><strong>Az Erste Bank hitelkártya-kínálatából eddigi vásárlási szokásai alapján választottuk ki azt, amelyik az Ön számára a legnagyobb előnyt nyújtja. Új Erste hitelkártyáját postai úton, inaktív állapotban, 2017 januárjában kapja meg.</strong></p>
+
+<p>Az ügyfélszámlák átadása után meglévő Citibank hitelkártyáját addig tudja használni, amíg SMS értesítést nem kap annak blokkolásáról.</p>
+
+<p>Újabb értesítést kap majd, ha elkezdheti használni új Erste hitelkártyáját és az ahhoz kapcsolódó szolgáltatásokat.</p>
+
+<p>Erste hitelkártyája az első vásárlással vagy Erste Bank ATM-nél történő egyenleg-lekérdezéssel (chip leolvasásával és PIN-kód megadásával) automatikusan aktiválódik. A kártyához tartozó PIN-kód megegyezik a meglévő Citibank hitelkártyája PIN-kódjával.</p>
+
+<p>Az ügyfélszámlák átadását követően új Erste hitelkártyáját a megszokott kamat- és díjfeltételek mellett használhatja tovább. <span style="background-color:#FFFF00;">(link a hitelkártya hirdetményre)</span></p>
+
+<p>Amennyiben rendelkezik Részletfizetési Szolgáltatással (Automatikus Könnyített Törlesztés Könnyített Törlesztés, Tele-Kölcsön), az változatlan&nbsp; kamat- és egyéb feltételekkel kerül át az Erste Bankhoz.</p>
+
+<p>Az új Erste hitelkártyák kártya- és számlaszáma eltér a jelenlegitől, erről részleteket a Citibank által 2016 novemberében küldött tájékozató levélben talál.</p>
+
+<p>Új hitelkártyája előnyeiért és részleteiért, kérjük, lépjen be egyéni kódjával!</p>
+
+				</div>                 
+                  
+                  <div class="clear20"></div>
+                  
+                  
+                  
+                                        
+                <!-- tab box --> 
+              <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+ 
+<div id="tabs">
+  <ul class="tabs_nav clr">
+    <li><a href="#tabs-1">Fontos tudnivalók</a></li>
+    <li><a href="#tabs-2">További tudnivalók</a></li>
+  </ul>
+  <div id="tabs-1" class="tabs_item">
+<ul>
+	<li>Eddigi fizetési módja nem változik, azonban a hitelkártya számlaszám változása miatt felhívjuk figyelmét az alábbiakra:
+	<ul>
+		<li>Amennyiben hitelkártya-tartozását tartós átutalással és nem a Citibanknál vezetett folyószámlájáról fizeti, úgy kérjük, gondoskodjon az átutalási megbízáson a kedvezményezett számlaszám&nbsp; módosításáról!</li>
+		<li>Amennyiben hitelkártya-tartozását csekkes fizetési móddal rendezi, kérjük, ügyeljen arra, hogy az ügyfélszámlák átadása után az újonnan kapott csekken vagy átutalással rendezze tartozását.</li>
+	</ul>
+	</li>
+	<li>Kérjük, ellenőrizze a Citibanktól 2016. novemberében kapott tájékoztató levelében, hogy az átadást követően változik-e új hitelkártyája számlakivonat-készítési napja (fordulónap). Amennyiben az Ön számára ez változik, kérjük, gondoskodjon a visszafizetési határidőnek megfelelő törlesztésről.</li>
+	<li>A Citibank hitelkártyájához kapcsolódó társkártyá(ka)t Erste társhitelkártyá(k)ra cseréljük, amely(ek) típusa megegyezik a főhitelkártya típusával. A társhitelkártyá(ka)t a főhitelkártya-birtokosnak küldjük el. Felhívjuk figyelmét, hogy társhitelkártya esetében nincs mód külön vásárlási limit beállítására, társkártyájára a főkártyáéval azonos vásárlási limit kerül beállításra. Kiskorú társkártya birtokosokra ettől eltérő feltételek vonatkoznak, melyek részleteit a Citibank által 2016 novemberében küldött tájékoztató levélben találja.</li>
+	<li>Amennyiben jelenlegi hitelkártyájához elektronikus számlakivonat szolgáltatás kapcsolódik, az ügyfélszámlák átadását követően hitelkártya e-számlakivonatát az Erste NetBankjából töltheti le.</li>
+	<li>Új Erste hitelkártyájához díjmentes utas-, baleset- és poggyászbiztosítás kapcsolódik. A biztosítás részletes feltételeit itt találja. <span style="background-color:#FFFF00;">(link a biztosítási feltétekre)</span></li>
+	<li>Amennyiben rendelkezett a Citibank hitelkártyájához az ügyfélszámlák átadásakor kapcsolódó (hitelfedezeti) élet-, baleset- és egészségbiztosítással, a biztosítás az új Erste hitelkártyán változatlan feltételekkel él tovább.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>A fenti információk nem teljeskörűek, az egyes termékek és szolgáltatások részletes feltételei <strong>az Erste Bank Hungary Zrt. honlapján megismerhetőek</strong>. Az Erste Bank Üzletszabályzata, általános szerződési feltételei és hirdetmények megtalálhatóak:&nbsp;<span style="background-color:#FFFF00;"> link</span></p>
+
+  </div>
+  <div id="tabs-2" class="tabs_item">
+    <ul>
+	<li>Mivel új Erste hitelkártyája kártyaszáma eltér a korábbi, Citibank által kibocsátott hitelkártyájáétól, az átadást követően ne felejtse el módosítani kártyaszámát azokon az internetes elfogadóhelyeken, applikációkban (pl. App Store, Google, Spotify, Playstation stb.), ahol meglévő kártyája regisztrálásra került!.</li>
+	<li>Hitelkártya-tartozását befizetheti Erste NetBankon, Erste MobilBankon, az Erste Bank fiókjaiban és az Erste Bank készpénz-befizetésre alkalmas ATM-jein keresztül is.</li>
+	<li>A Könnyített Törlesztést, Automatikus Könnyített Törlesztést, Tele-Kölcsön szolgáltatást változatlan feltételekkel veheti igénybe az átadást követően. Promóció keretében igényelt Automatikus Könnyített Törlesztés szolgáltatás esetén a feltételek változhatnak, az érintett ügyfeleket az esetleges változásokról 2016. december 31-ig külön értesíti a Citibank.</li>
+	<li>Citibank SMS Hírnökszolgáltatása helyett az Erste Hitelkártya Hírnök SMS-szolgáltatás kerül beállításra, változatlan díjjal (több kártya esetén hitelkártyánként).</li>
+	<li>Új hitelkártyája a kényelmesebb és gyorsabb használat érdekében egyérintéses fizetést is lehetővé tesz az erre alkalmas elfogadóhelyeken.</li>
+	<li>Új Erste hitelkártyájánál a visszafizetési határidő változatlanul 21 nap.</li>
+</ul>
+
+  </div>
+
+</div>
+ 
+                <!-- tab box -->       
+                
+
+
+                       
+                
+
+
+
+
+
+
+                </div>
+                <!-- termekek lista --> 
+                
+              </div>
+              <!-- center col --> 
+              <!-- right col -->
+              <div class="col_right"> 
+               
+                
+                                    
+ <!-- box login -->
+            <div class="right_box login clr display_none">
+              <div class="txt">
+                <div class="login_form"><span class="txt1">Egyéni kód megadása:</span>
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="Belépés">
+                  </form>
+                  <div class="clear15"></div>
+                  A belépéshez szükséges egyéni kódot a Citibank által 2016 novemberében küldött tájékoztató levélben találja meg. </div>
+              </div>
+            </div>
+            <!-- box login --> 
+<!-- box blue -->
+            <div class="right_box default_right_box clr jobb_box_nem_szegmens display_none">
+				<div class="txt">
+					<p>Az átállás folyamatáról és a tájékoztatás részletes menetrendjéről átlátható képet kaphat az Általános tudnivalók menüpontot megnyitva. Itt egy folyamatábra segítségével megnézheti, milyen lépések várnak Önre az elkövetkező hónapokban!</p>
+					<a href="" class="but_red">Megnézem</a>
+				</div>
+            </div>
+           
+			
+			
+			
+		                                
+              </div>
+              <!-- right col --> 
+            </div>
+            <div class="clear"></div>
+          </div>
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        
+               <!-- footer -->
+        <div class="clear"></div>
+        <footer>
+          <div class="center">
+            <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>
+              <nav>
+                <ul>
+                  <li><a href="szegmens-offline.html" id="szegmens_termek_oldal_footer">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="gyik.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>
+              </nav>
+            </section>
+            <article> <a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>
+              <p>Copyright © 2016 Citigroup Inc.</p>
+            </article>
+          </div>
+        </footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>    
+</body>
+</html>

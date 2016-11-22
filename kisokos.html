@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Citibank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="copyright" content="Copyright &copy; ">
+	<meta name="robots" content="index, follow, all">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="page-type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<link href="css/base.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.uniform.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/jquery.text.js"></script>
+	<script src="js/jquery.config.js"></script>
+        <script src="js/jquery.utils.js"></script>
+	</head>
+	<body>
+     <div class="layer" id="hibauzenet_layer">
+            <div class="overlay"></div>
+            <div class="layer_bg" id="hb">
+                <a onClick="closeErrorLayer()" class="layer_close">X</a>
+                <h3>Hibaüzenet</h3>
+                <div class="layer_txt" id="hibauzenet"></div>
+                <div class="layer_but_center">
+                    <div class="layer_but">
+                        <input type="hidden" id="elemFocus" value="">
+                        <a onClick="closeErrorLayer()"  class="but_blue">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="wrapper">
+      <div class="m_cont"> 
+        
+        <!-- header -->
+        <header class="clr">
+          <div class="top_bg clr">
+            <div class="center">
+              <div class="logo"><a href="index.html">Logo</a></div>
+              <a href="javascript:;" class="mobil_menu"><span></span><span></span><span></span></a> </div>
+          </div>
+          <div class="top_bg mm clr">
+            <div class="center"> 
+              <!-- top menu --> <nav class="top_nav"><ul><li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li class="act"><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="english.html"><span class="flag_en"></span>EN</a></li>
+                </ul>
+              </nav>
+              <div class="bg_code clr" id="top_login">
+                <div class="txt">Egyéni kód megadása </div>
+                <div class="code_form">
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="">
+                  </form>
+                </div>
+              </div>
+              <div class="bg_code bg_logged clr" id="top_logined" style="display: none;">
+                  <div class="txt">Ön be van jelentkezve</div>
+                  <button class="code_logout">Kilépés</button>
+              </div>
+              <!-- top menu --> 
+            </div>
+          </div>
+        </header>
+        <!-- header --> 
+        
+        <!-- content -->
+        <section>
+          <div class="center clr"> 
+          <div class="cont_inner">
+            <!-- left col -->
+            <div class="col_left">
+              <nav class="left_nav">
+                <div class="title">Kisokos</div>
+                <ul>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li class="act"><a href="kisokos.html">Kisokos</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- left col --> 
+            <!-- center col -->
+            <div class="col_center">              <ul class="breadcrumb clr">
+                <li><a href="index.html">Főoldal</a></li>
+                <li>Kisokos</li>
+              </ul>
+              <h2>Citi-Erste banki kisokos</h2>
+              <div class="cont_szotar">
+              <div class="txt">
+              A Citi-Erste banki kisokos arra szolgál, hogy Ön tisztában legyen azzal, hogy a Citibanknál használt szakkifejezéseknek mi a megfelelője az Erste Banknál.
+                <div class="clear20"></div>
+              <h5>Általános</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citibank SMS Hírnökszolgálat</span><span class="cs_right">Erste Hírnök<br>Erste Hitelkártya Hírnök<br>Erste HitelŐr (kölcsönök és hitelek esetén)</span></li>
+				  <li class="clr"><span class="cs_left">Kamat- és díjfeltételek</span><span class="cs_right">Hirdetmény</span></li>
+				  <li class="clr"><span class="cs_left">CitiGold</span><span class="cs_right">Erste World</span></li>
+				  <li class="clr"><span class="cs_left">Citi Gold Club</span><span class="cs_right">Erste World Club</span></li>
+				  <li class="clr"><span class="cs_left">Citi Priority</span><span class="cs_right">Erste Prémium</span></li>
+				  <li class="clr"><span class="cs_left">Citi Select</span><span class="cs_right">Erste Private Banking</span></li>
+              </ul>
+              <h5>Folyószámla</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citibank Utazási Csomag</span><span class="cs_right">Utasbiztosítás</span></li>
+				  <li class="clr"><span class="cs_left">Citikártya</span><span class="cs_right">Erste betéti kártya</span></li>
+				  <li class="clr"><span class="cs_left">E-számlakivonat</span><span class="cs_right">Elektronikus számlakivonat</span></li>
+				  <li class="clr"><span class="cs_left">Közös számlatulajdonos</span><span class="cs_right">Társtulajdonos</span></li>
+				  <li class="clr"><span class="cs_left">Meghatalmazott</span><span class="cs_right">Rendelkező</span></li>
+
+              </ul>
+              <h5>Hitelkártya</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citi Forint</span><span class="cs_right">Erste Forint vagy Wizz Air pont</span></li>
+				  <li class="clr"><span class="cs_left">Citibank Utazási Csomag</span><span class="cs_right">Utasbiztosítás</span></li>
+				  <li class="clr"><span class="cs_left">Számlakivonat készítés dátuma</span><span class="cs_right">Fordulónap</span></li>
+              </ul>
+              <h5>Megtakarítások és Befektetések</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citibank Prémium Megtakarítás</span><span class="cs_right">Erste Strukturált Termék (EST)</span></li>
+				  <li class="clr"><span class="cs_left">Jövő Befektetési Terv</span><span class="cs_right">Erste Megtakarítási Program</span></li>
+				  <li class="clr"><span class="cs_left">Kockázatfeltáró adatlap</span><span class="cs_right">Alkalmassági és megfelelési teszt (MiFID teszt)</span></li>
+				  <li class="clr"><span class="cs_left">Strukturált kötvény</span><span class="cs_right">Strukturált értékpapír</span></li>
+              </ul>
+              <h5>Személyi Kölcsön és Jelzálogkölcsön</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Automatikus beszedés</span><span class="cs_right">Belső beszedés</span></li>
+				  <li class="clr"><span class="cs_left">Citibank Személyi Hitelhez kapcsolódó hitelfedezeti biztosítás</span><span class="cs_right">Törlesztésvédelmi biztosítás</span></li>
+				  <li class="clr"><span class="cs_left">Részbeni/részleges előtörlesztés</span><span class="cs_right">Előtörlesztés</span></li>
+				  <li class="clr"><span class="cs_left">Teljes előtörlesztés</span><span class="cs_right">Végtörlesztés</span></li>
+              </ul>
+              <h5>Online banking</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citibank Online</span><span class="cs_right">Erste NetBank / NetBroker</span></li>
+				  <li class="clr"><span class="cs_left">Citibank Online Internet Banking kedvezményezett</span><span class="cs_right">Erste NetBank/MobilBank Sablon</span></li>
+				  <li class="clr"><span class="cs_left">Egyszer használatos biztonsági kód</span><span class="cs_right">Belépési SMS kód / Tranzakciós kód</span></li>
+              </ul>
+              <h5>Telefonos ügyfélszolgálat</h5>
+              <ul>
+				  <li class="clr"><span class="cs_left">Citibank Hitelvonal</span><span class="cs_right">Erste TeleBank</span></li>
+				  <li class="clr"><span class="cs_left">CitiPhone Banking</span><span class="cs_right">Erste TeleBank</span></li>
+              </ul>
+              </div>
+              </div>
+            </div>
+            <!-- center col --> <!-- right col -->
+            <div class="col_right">
+                       <!-- box login -->
+            <div class="right_box login clr display_none">
+              <div class="txt">
+                <div class="login_form"><span class="txt1">Egyéni kód megadása:</span>
+                  <form>
+                    <input type="text" class="code_inp">
+                    <input type="submit" class="code_but" value="Belépés">
+                  </form>
+                  <div class="clear15"></div>
+                  A belépéshez szükséges egyéni kódot a Citibank által 2016 novemberében küldött tájékoztató levélben találja meg. </div>
+              </div>
+            </div>
+            <!-- box login --> 
+           <!-- box blue -->
+            <div class="right_box kisokos_box2 display_none clr">
+				<div class="txt">
+					<p>Nem találta meg a keresett információt? A Kérdések és válaszok menüpont bővebb tájékoztatást adhat Önnek.</p>
+					<a href="kerdesek_es_valaszok.html" class="but_red">Megnézem</a>
+				</div>
+            </div>
+            <!-- box blue -->
+
+            
+                     
+             </div>
+            <!-- right col --></div>  
+            <div class="clear"></div>
+          </div>
+          
+        </section>
+        <div class="clear40"></div>
+        <!-- content --> 
+        
+        <!-- footer -->
+        <div class="clear"></div>
+        <footer>
+          <div class="center">
+            <section>              <aside><a href="http://www.citigroup.com/citi/" target="_blank" title="CITIGROUP.COM" class="padtop">CITIGROUP.COM</a></aside>
+              <nav>
+                <ul>
+                  <li><a href="szegmens-offline.html" class="szegmens_termek_oldal_link">Termékek és kiszolgálási csatornák</a></li>
+                  <li><a href="altalanos_informacio.html">Általános információ</a></li>
+                  <li><a href="kerdesek_es_valaszok.html">Kérdések és válaszok</a></li>
+                  <li><a href="hirek.html">Hírek</a></li>
+                  <li><a href="dokumentumok.html">Dokumentumok</a></li>
+                  <li><a href="elerhetosegek.html">Elérhetőségek</a></li>
+                  <li><a href="english.html">EN</a></li>
+                </ul>
+              </nav>
+            </section>
+            <article> <a href="#" title="citi"><img src="img/footer-citi-logo-small.png" alt="Citi" title="Citi"></a>
+              <p>Copyright © 2016 Citigroup Inc.</p>
+            </article>
+          </div>
+        </footer>
+        
+        <!-- footer --> 
+      </div>
+    </div>
+    <script src="js/jquery.site.js"></script>
+</body>
+</html>

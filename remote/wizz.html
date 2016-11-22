@@ -1,0 +1,62 @@
+<div class="overlay" id="box_overlay" style="display:block"></div>
+
+<div class="layer_bg card_layer wizz_layer" style="display:none;">
+	<i class="layer_close" id="layer_close" ></i>
+	<div class="erste_logo"></div>
+	<div class="cont">
+		<div class="head">
+			<img src="img/wizz_card.png" alt="">
+			<h3>Vásároljon kártyával, ahogy szokott és spóroljon <br>a Wizz Air szolgáltatásain!</h3>
+		</div>
+		<div class="text">
+			<h5>Minden vásárlásra költött 100 forint után 2 pontot írunk jóvá. Wizz Air repülőjegy vásárlása esetén 100 forintonként 4 pont jár. Számolja ki, mennyit spórolhat egy évben! Számolja ki, hogy havi vásárlásait Wizz Air Hitelkártyával fizetve, hány pontot gyűjthetne 1 év alatt?</h5>
+			<div class="left">
+				<div class="row clr">
+					<div class="col50">
+						<div class="input">
+							<div class="label">Élelmiszer: </div>
+							<input type="text" class="wizz_price" id="food" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Üzemanyag: </div>
+							<input type="text" class="wizz_price" id="fuel" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Wizz Air <br>repülőjegy: </div>
+							<input type="text" class="wizz_price" id="air" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+					<div class="col50">
+						<div class="input">
+							<div class="label">Egyéb bankkártyásvásárlás:</div>
+							<input type="text" class="wizz_price" id="shopping" placeholder="0 Ft  -  100 000 Ft">
+						</div>
+					</div>
+				</div>
+				<p class="font12">Az összegyűjtött pontokat Wizz Air repülőjegyekre és egyéb Wizz Air szolgáltatások igénybevételére (pl. poggyászköltség, extra lábhely) válthatja be. 1 pont=1 forint. Az összegyűjtött pontokból a foglalás egy része is kifizethető. Részletek: www.erstebank.hu</p>
+			</div>
+			<div class="right">
+				<div class="row clr">
+					<div class="col50">
+						Havi költés:
+						<div id="monthlyPrice" class="price">0 Ft</div>
+					</div>
+					<div class="col50">
+						Havi pontok összege:
+						<div id="mounthlyPiece" class="price">0 db</div>
+					</div>
+				</div>
+				<span class="price-text"><span>Ajándék pontok összege:</span></span>
+				<div id="giftPoints" class="price big">10 000 db</div>
+				<div class="clear clear15"></div>
+				<span class="price-text"><span>Éves pontok összege:</span></span>
+				<div id="annualPoints" class="price big">0 db</div>
+                                <span id="error"></span>
+			</div>
+		</div>
+	</div>
+</div>
